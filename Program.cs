@@ -1,4 +1,5 @@
-﻿using BSIDCertificates.TF;
+﻿using BSIDCertificates.PG;
+using BSIDCertificates.TF;
 using BSIDCertificates.XM;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace BSIDCertificates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new XMForm());
+            Application.Run(new PGForm());
         }
     }
 }
