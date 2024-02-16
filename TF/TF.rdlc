@@ -518,6 +518,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <Top>0cm</Top>
         <Left>7.28166cm</Left>
         <Height>2.35883cm</Height>
         <Width>16.08855cm</Width>
@@ -556,7 +557,7 @@
           <Top>2.10318cm</Top>
           <Left>6.32915cm</Left>
           <Height>1.40992cm</Height>
-          <Width>1.98998cm</Width>
+          <Width>2.01115cm</Width>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -848,7 +849,7 @@
           <Top>1.17304cm</Top>
           <Left>6.32915cm</Left>
           <Height>0.93014cm</Height>
-          <Width>1.98998cm</Width>
+          <Width>2.01115cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
             <Border>

@@ -76,6 +76,12 @@
     <Compile Include="TF\TFForm.Designer.cs">
       <DependentUpon>TFForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TR\TRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TR\TRForm.Designer.cs">
+      <DependentUpon>TRForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WS\WSForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,9 +101,14 @@
     <EmbeddedResource Include="PG\PGForm.resx">
       <DependentUpon>PGForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TEST.rdlc" />
     <EmbeddedResource Include="TF\TF.rdlc" />
     <EmbeddedResource Include="TF\TFForm.resx">
       <DependentUpon>TFForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TR\TR.rdlc" />
+    <EmbeddedResource Include="TR\TRForm.resx">
+      <DependentUpon>TRForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WS\WS.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -145,8 +156,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TR\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

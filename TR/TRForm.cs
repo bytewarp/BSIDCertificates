@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BSIDCertificates
+namespace BSIDCertificates.TR
 {
-    public partial class WSForm : Form
+    public partial class TRForm : Form
     {
-        public WSForm()
+        public TRForm()
         {
             InitializeComponent();
         }
 
-        private void WSForm_Load(object sender, EventArgs e)
+        private void TRForm_Load(object sender, EventArgs e)
         {
 
             this.reportViewer1.RefreshReport();
