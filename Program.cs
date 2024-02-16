@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BSIDCertificates.TF;
+using BSIDCertificates.XM;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace BSIDCertificates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WSForm());
+            Application.Run(new XMForm());
         }
     }
 }
