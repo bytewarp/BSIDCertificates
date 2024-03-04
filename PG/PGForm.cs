@@ -59,7 +59,8 @@ namespace BSIDCertificates.PG
                     con.Open();
                     SqlCommand cmd = new SqlCommand("select BB8PGReadings_InspectionPoints, BB8PGReadings_BeforeIncreasingError, BB8PGReadings_BeforeDecreasingError, " +
                         "BB8PGReadings_AfterIncreasingError, BB8PGReadings_AfterDecreasingError " +
-                        "FROM tblBB8PGReadingsMaster ", con);
+                        "FROM tblBB8PGReadingsMaster " +
+                        "ORDER BY CAST(BB8PGReadings_InspectionPoints AS DECIMAL(18,2)) ", con);
                     //cmd.ExecuteNonQuery();
 
                     using (SqlDataAdapter sda = new SqlDataAdapter())

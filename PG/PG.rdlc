@@ -525,15 +525,22 @@
               <TablixHeader>
                 <Size>4.27854cm</Size>
                 <CellContents>
-                  <Textbox Name="BB8PGReadings_InspectionPoints1">
+                  <Textbox Name="BB8PGReadings_InspectionPoints">
                     <CanGrow>true</CanGrow>
+                    <UserSort>
+                      <SortExpression>=Fields!BB8PGReadings_InspectionPoints.Value</SortExpression>
+                      <SortExpressionScope>BB8PGReadings_InspectionPoints</SortExpressionScope>
+                      <SortTarget>dsBB8PGReadingsTable</SortTarget>
+                    </UserSort>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
                             <Value>=Fields!BB8PGReadings_InspectionPoints.Value</Value>
-                            <Style />
+                            <Style>
+                              <Format>0.00;(0.00)</Format>
+                            </Style>
                           </TextRun>
                         </TextRuns>
                         <Style>
@@ -541,7 +548,7 @@
                         </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>BB8PGReadings_InspectionPoints1</rd:DefaultName>
+                    <rd:DefaultName>BB8PGReadings_InspectionPoints</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -562,8 +569,8 @@
         <DataSetName>dsBB8PGReadingsTable</DataSetName>
         <Top>0.18011cm</Top>
         <Left>3.28757cm</Left>
-        <Height>2.51967cm</Height>
-        <Width>18.59968cm</Width>
+        <Height>2.51966cm</Height>
+        <Width>18.59967cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
