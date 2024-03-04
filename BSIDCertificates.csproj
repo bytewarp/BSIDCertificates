@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BridgestoneCalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BridgestoneCalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogError.cs" />
     <Compile Include="PG\PGForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,17 @@
     <EmbeddedResource Include="XM\XMForm.resx">
       <DependentUpon>XMForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BridgestoneCalDataSet.xsc">
+      <DependentUpon>BridgestoneCalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BridgestoneCalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BridgestoneCalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BridgestoneCalDataSet.xss">
+      <DependentUpon>BridgestoneCalDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
