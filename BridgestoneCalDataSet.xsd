@@ -2,12 +2,12 @@
 <xs:schema id="BridgestoneCalDataSet" targetNamespace="http://tempuri.org/BridgestoneCalDataSet.xsd" xmlns:mstns="http://tempuri.org/BridgestoneCalDataSet.xsd" xmlns="http://tempuri.org/BridgestoneCalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BridgestoneCalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BridgestoneCalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BSIDCertificates.Properties.Settings.GlobalReference.Default.BridgestoneCalConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8PGReadingsTableTableAdapter" GeneratorDataComponentClassName="dtBB8PGReadingsTableTableAdapter" Name="dtBB8PGReadingsTable" UserDataComponentName="dtBB8PGReadingsTableTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8PGReadingsTableAdapter" GeneratorDataComponentClassName="dtBB8PGReadingsTableAdapter" Name="dtBB8PGReadings" UserDataComponentName="dtBB8PGReadingsTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectName="BridgestoneCal.dbo.tblBB8PGReadingsMaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
@@ -43,6 +43,218 @@ where tblBB8PGReadingsMaster.BB8PGReadings_ID=@BB8PGReadings_ID</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8DetailsTableAdapter" GeneratorDataComponentClassName="dtBB8DetailsTableAdapter" Name="dtBB8Details" UserDataComponentName="dtBB8DetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select Machine_Name, Cycle_Name, Device_Name, Device_ControlID,
+Device_Make , Device_Model, 
+CONCAT(Device_LHRangeCombined, ' ' , Device_RangeUnit) AS Device_LHRangeCombined,
+CONCAT(Device_LC, ' ' , Device_LCUnit) AS Device_LCCombined, 
+CONCAT(Device_Accuracy, ' ' , Device_AccuracyUnit) AS Device_AccuracyCombined,
+CONCAT(Device_JudgementSpecs, ' ' , Device_JudgementUnit) AS Device_JudgementCombined,
+CONCAT(Device_LHOPRangeCombined, ' ' , Device_OperatingRangeUnit) AS Device_OPRangeCombined, Inst_Name, Inst_ControlIDCombined
+from tblDeviceMaster
+join tblMachineMaster on tblDeviceMaster.Machine_ID = tblMachineMaster.Machine_ID
+join tblCycleMaster on tblDeviceMaster.Cycle_ID = tblCycleMaster.Cycle_ID
+join tblDeviceInstMaster on tblDeviceMaster.Device_ID = tblDeviceInstMaster.Device_ID
+join tblInstrumentMaster on tblDeviceInstMaster.Inst_ID = tblInstrumentMaster.Inst_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Machine_Name" DataSetColumn="Machine_Name" />
+              <Mapping SourceColumn="Cycle_Name" DataSetColumn="Cycle_Name" />
+              <Mapping SourceColumn="Device_Name" DataSetColumn="Device_Name" />
+              <Mapping SourceColumn="Device_ControlID" DataSetColumn="Device_ControlID" />
+              <Mapping SourceColumn="Device_Make" DataSetColumn="Device_Make" />
+              <Mapping SourceColumn="Device_Model" DataSetColumn="Device_Model" />
+              <Mapping SourceColumn="Device_LHRangeCombined" DataSetColumn="Device_LHRangeCombined" />
+              <Mapping SourceColumn="Device_LCCombined" DataSetColumn="Device_LCCombined" />
+              <Mapping SourceColumn="Device_AccuracyCombined" DataSetColumn="Device_AccuracyCombined" />
+              <Mapping SourceColumn="Device_OPRangeCombined" DataSetColumn="Device_OPRangeCombined" />
+              <Mapping SourceColumn="Inst_Name" DataSetColumn="Inst_Name" />
+              <Mapping SourceColumn="Inst_ControlIDCombined" DataSetColumn="Inst_ControlIDCombined" />
+              <Mapping SourceColumn="Device_JudgementCombined" DataSetColumn="Device_JudgementCombined" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtTempHumidityTableAdapter" GeneratorDataComponentClassName="dtTempHumidityTableAdapter" Name="dtTempHumidity" UserDataComponentName="dtTempHumidityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select Top 1 CONCAT(THReading_Temperature, ' °C ', THReading_Humidity, ' % ') AS TempHumidityCombined 
+from tblTHReadingMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TempHumidityCombined" DataSetColumn="TempHumidityCombined" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8XMReadingsTableAdapter" GeneratorDataComponentClassName="dtBB8XMReadingsTableAdapter" Name="dtBB8XMReadings" UserDataComponentName="dtBB8XMReadingsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectName="BridgestoneCal.dbo.tblBB8XMReadingsMaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tblBB8XMReadingsMaster] ([BB8XMReadings_SetValueItem], [BB8XMReadings_BeforeAdjustmentPanelDisplay], [BB8XMReadings_BeforeAdjustmentTachometerMeasured], [BB8XMReadings_BeforeAdjustmentError], [BB8XMReadings_AfterAdjustmentPanelDisplay], [BB8XMReadings_AfterAdjustmentTachometerMeasured], [BB8XMReadings_AfterAdjustmentError]) VALUES (@BB8XMReadings_SetValueItem, @BB8XMReadings_BeforeAdjustmentPanelDisplay, @BB8XMReadings_BeforeAdjustmentTachometerMeasured, @BB8XMReadings_BeforeAdjustmentError, @BB8XMReadings_AfterAdjustmentPanelDisplay, @BB8XMReadings_AfterAdjustmentTachometerMeasured, @BB8XMReadings_AfterAdjustmentError)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_SetValueItem" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_SetValueItem" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_BeforeAdjustmentPanelDisplay" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_BeforeAdjustmentPanelDisplay" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_BeforeAdjustmentTachometerMeasured" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_BeforeAdjustmentTachometerMeasured" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_BeforeAdjustmentError" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_BeforeAdjustmentError" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_AfterAdjustmentPanelDisplay" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_AfterAdjustmentPanelDisplay" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_AfterAdjustmentTachometerMeasured" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_AfterAdjustmentTachometerMeasured" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8XMReadings_AfterAdjustmentError" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8XMReadings_AfterAdjustmentError" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select BB8XMReadings_SetValueItem, BB8XMReadings_BeforeAdjustmentPanelDisplay, BB8XMReadings_BeforeAdjustmentTachometerMeasured,
+BB8XMReadings_BeforeAdjustmentError, BB8XMReadings_AfterAdjustmentPanelDisplay, BB8XMReadings_AfterAdjustmentTachometerMeasured,
+BB8XMReadings_AfterAdjustmentError
+from tblBB8XMReadingsMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BB8XMReadings_SetValueItem" DataSetColumn="BB8XMReadings_SetValueItem" />
+              <Mapping SourceColumn="BB8XMReadings_BeforeAdjustmentPanelDisplay" DataSetColumn="BB8XMReadings_BeforeAdjustmentPanelDisplay" />
+              <Mapping SourceColumn="BB8XMReadings_BeforeAdjustmentTachometerMeasured" DataSetColumn="BB8XMReadings_BeforeAdjustmentTachometerMeasured" />
+              <Mapping SourceColumn="BB8XMReadings_BeforeAdjustmentError" DataSetColumn="BB8XMReadings_BeforeAdjustmentError" />
+              <Mapping SourceColumn="BB8XMReadings_AfterAdjustmentPanelDisplay" DataSetColumn="BB8XMReadings_AfterAdjustmentPanelDisplay" />
+              <Mapping SourceColumn="BB8XMReadings_AfterAdjustmentTachometerMeasured" DataSetColumn="BB8XMReadings_AfterAdjustmentTachometerMeasured" />
+              <Mapping SourceColumn="BB8XMReadings_AfterAdjustmentError" DataSetColumn="BB8XMReadings_AfterAdjustmentError" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8WSReadingsTableAdapter" GeneratorDataComponentClassName="dtBB8WSReadingsTableAdapter" Name="dtBB8WSReadings" UserDataComponentName="dtBB8WSReadingsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectName="BridgestoneCal.dbo.tblBB8WSReadingsMaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tblBB8WSReadingsMaster] ([BB8WSReadings_StdWtApplied], [BB8WSReadings_BeforeAdjustmentDisplayIncreasing], [BB8WSReadings_BeforeAdjustmentDisplayDecreasing], [BB8WSReadings_BeforeAdjustmentMaxError], [BB8WSReadings_AfterAdjustmentDisplayIncreasing], [BB8WSReadings_AfterAdjustmentDisplayDecreasing], [BB8WSReadings_AfterAdjustmentMaxError]) VALUES (@BB8WSReadings_StdWtApplied, @BB8WSReadings_BeforeAdjustmentDisplayIncreasing, @BB8WSReadings_BeforeAdjustmentDisplayDecreasing, @BB8WSReadings_BeforeAdjustmentMaxError, @BB8WSReadings_AfterAdjustmentDisplayIncreasing, @BB8WSReadings_AfterAdjustmentDisplayDecreasing, @BB8WSReadings_AfterAdjustmentMaxError)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_StdWtApplied" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_StdWtApplied" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_BeforeAdjustmentDisplayIncreasing" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_BeforeAdjustmentDisplayIncreasing" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_BeforeAdjustmentDisplayDecreasing" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_BeforeAdjustmentDisplayDecreasing" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_BeforeAdjustmentMaxError" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_BeforeAdjustmentMaxError" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_AfterAdjustmentDisplayIncreasing" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_AfterAdjustmentDisplayIncreasing" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_AfterAdjustmentDisplayDecreasing" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_AfterAdjustmentDisplayDecreasing" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8WSReadings_AfterAdjustmentMaxError" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8WSReadings_AfterAdjustmentMaxError" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select BB8WSReadings_StdWtApplied, BB8WSReadings_BeforeAdjustmentDisplayIncreasing, BB8WSReadings_BeforeAdjustmentDisplayDecreasing,
+BB8WSReadings_BeforeAdjustmentMaxError, BB8WSReadings_AfterAdjustmentDisplayIncreasing, BB8WSReadings_AfterAdjustmentDisplayDecreasing,
+BB8WSReadings_AfterAdjustmentMaxError
+from tblBB8WSReadingsMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BB8WSReadings_StdWtApplied" DataSetColumn="BB8WSReadings_StdWtApplied" />
+              <Mapping SourceColumn="BB8WSReadings_BeforeAdjustmentDisplayIncreasing" DataSetColumn="BB8WSReadings_BeforeAdjustmentDisplayIncreasing" />
+              <Mapping SourceColumn="BB8WSReadings_BeforeAdjustmentDisplayDecreasing" DataSetColumn="BB8WSReadings_BeforeAdjustmentDisplayDecreasing" />
+              <Mapping SourceColumn="BB8WSReadings_BeforeAdjustmentMaxError" DataSetColumn="BB8WSReadings_BeforeAdjustmentMaxError" />
+              <Mapping SourceColumn="BB8WSReadings_AfterAdjustmentDisplayIncreasing" DataSetColumn="BB8WSReadings_AfterAdjustmentDisplayIncreasing" />
+              <Mapping SourceColumn="BB8WSReadings_AfterAdjustmentDisplayDecreasing" DataSetColumn="BB8WSReadings_AfterAdjustmentDisplayDecreasing" />
+              <Mapping SourceColumn="BB8WSReadings_AfterAdjustmentMaxError" DataSetColumn="BB8WSReadings_AfterAdjustmentMaxError" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8TFReadingsTableAdapter" GeneratorDataComponentClassName="dtBB8TFReadingsTableAdapter" Name="dtBB8TFReadings" UserDataComponentName="dtBB8TFReadingsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectName="BridgestoneCal.dbo.tblBB8TFReadingsMaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tblBB8TFReadingsMaster] ([BB8TFReadings_InspectionPoint], [BB8TFReadings_BeforeAdjustmentDisplayActual], [BB8TFReadings_BeforeAdjustmentDisplayDifference], [BB8TFReadings_AfterAdjustmentDisplayActual], [BB8TFReadings_AfterAdjustmentDisplayDifference]) VALUES (@BB8TFReadings_InspectionPoint, @BB8TFReadings_BeforeAdjustmentDisplayActual, @BB8TFReadings_BeforeAdjustmentDisplayDifference, @BB8TFReadings_AfterAdjustmentDisplayActual, @BB8TFReadings_AfterAdjustmentDisplayDifference)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TFReadings_InspectionPoint" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TFReadings_InspectionPoint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TFReadings_BeforeAdjustmentDisplayActual" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TFReadings_BeforeAdjustmentDisplayActual" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TFReadings_BeforeAdjustmentDisplayDifference" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TFReadings_BeforeAdjustmentDisplayDifference" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TFReadings_AfterAdjustmentDisplayActual" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TFReadings_AfterAdjustmentDisplayActual" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TFReadings_AfterAdjustmentDisplayDifference" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TFReadings_AfterAdjustmentDisplayDifference" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select BB8TFReadings_InspectionPoint, BB8TFReadings_BeforeAdjustmentDisplayActual, BB8TFReadings_BeforeAdjustmentDisplayDifference,
+BB8TFReadings_AfterAdjustmentDisplayActual, BB8TFReadings_AfterAdjustmentDisplayDifference
+from tblBB8TFReadingsMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BB8TFReadings_InspectionPoint" DataSetColumn="BB8TFReadings_InspectionPoint" />
+              <Mapping SourceColumn="BB8TFReadings_BeforeAdjustmentDisplayActual" DataSetColumn="BB8TFReadings_BeforeAdjustmentDisplayActual" />
+              <Mapping SourceColumn="BB8TFReadings_BeforeAdjustmentDisplayDifference" DataSetColumn="BB8TFReadings_BeforeAdjustmentDisplayDifference" />
+              <Mapping SourceColumn="BB8TFReadings_AfterAdjustmentDisplayActual" DataSetColumn="BB8TFReadings_AfterAdjustmentDisplayActual" />
+              <Mapping SourceColumn="BB8TFReadings_AfterAdjustmentDisplayDifference" DataSetColumn="BB8TFReadings_AfterAdjustmentDisplayDifference" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtBB8TRReadingsTableAdapter" GeneratorDataComponentClassName="dtBB8TRReadingsTableAdapter" Name="dtBB8TRReadings" UserDataComponentName="dtBB8TRReadingsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BridgestoneCalConnectionString (Settings)" DbObjectName="BridgestoneCal.dbo.tblBB8TRReadingsMaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tblBB8TRReadingsMaster] ([BB8TRReadings_InputDCVoltage], [BB8TRReadings_Channel1ChartReading], [BB8TRReadings_Channel1Display], [BB8TRReadings_Channel2ChartReading], [BB8TRReadings_Channel2Display], [BB8TRReadings_Channel3ChartReading], [BB8TRReadings_Channel3Display], [BB8TRReadings_Channel4ChartReading], [BB8TRReadings_Channel4Display]) VALUES (@BB8TRReadings_InputDCVoltage, @BB8TRReadings_Channel1ChartReading, @BB8TRReadings_Channel1Display, @BB8TRReadings_Channel2ChartReading, @BB8TRReadings_Channel2Display, @BB8TRReadings_Channel3ChartReading, @BB8TRReadings_Channel3Display, @BB8TRReadings_Channel4ChartReading, @BB8TRReadings_Channel4Display)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_InputDCVoltage" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_InputDCVoltage" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel1ChartReading" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel1ChartReading" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel1Display" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel1Display" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel2ChartReading" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel2ChartReading" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel2Display" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel2Display" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel3ChartReading" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel3ChartReading" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel3Display" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel3Display" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel4ChartReading" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel4ChartReading" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BB8TRReadings_Channel4Display" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BB8TRReadings_Channel4Display" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select BB8TRReadings_InputDCVoltage, BB8TRReadings_Channel1ChartReading, BB8TRReadings_Channel1Display,
+BB8TRReadings_Channel2ChartReading, BB8TRReadings_Channel2Display,
+BB8TRReadings_Channel3ChartReading, BB8TRReadings_Channel3Display,
+BB8TRReadings_Channel4ChartReading, BB8TRReadings_Channel4Display
+from tblBB8TRReadingsMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BB8TRReadings_InputDCVoltage" DataSetColumn="BB8TRReadings_InputDCVoltage" />
+              <Mapping SourceColumn="BB8TRReadings_Channel1ChartReading" DataSetColumn="BB8TRReadings_Channel1ChartReading" />
+              <Mapping SourceColumn="BB8TRReadings_Channel1Display" DataSetColumn="BB8TRReadings_Channel1Display" />
+              <Mapping SourceColumn="BB8TRReadings_Channel2ChartReading" DataSetColumn="BB8TRReadings_Channel2ChartReading" />
+              <Mapping SourceColumn="BB8TRReadings_Channel2Display" DataSetColumn="BB8TRReadings_Channel2Display" />
+              <Mapping SourceColumn="BB8TRReadings_Channel3ChartReading" DataSetColumn="BB8TRReadings_Channel3ChartReading" />
+              <Mapping SourceColumn="BB8TRReadings_Channel3Display" DataSetColumn="BB8TRReadings_Channel3Display" />
+              <Mapping SourceColumn="BB8TRReadings_Channel4ChartReading" DataSetColumn="BB8TRReadings_Channel4ChartReading" />
+              <Mapping SourceColumn="BB8TRReadings_Channel4Display" DataSetColumn="BB8TRReadings_Channel4Display" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -51,38 +263,368 @@ where tblBB8PGReadingsMaster.BB8PGReadings_ID=@BB8PGReadings_ID</CommandText>
   <xs:element name="BridgestoneCalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BridgestoneCalDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BridgestoneCalDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="dtBB8PGReadingsTable" msprop:Generator_RowEvHandlerName="dtBB8PGReadingsTableRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8PGReadingsTableRowDeleted" msprop:Generator_RowDeletingName="dtBB8PGReadingsTableRowDeleting" msprop:Generator_RowEvArgName="dtBB8PGReadingsTableRowChangeEvent" msprop:Generator_TablePropName="dtBB8PGReadingsTable" msprop:Generator_RowChangedName="dtBB8PGReadingsTableRowChanged" msprop:Generator_RowChangingName="dtBB8PGReadingsTableRowChanging" msprop:Generator_TableClassName="dtBB8PGReadingsTableDataTable" msprop:Generator_RowClassName="dtBB8PGReadingsTableRow" msprop:Generator_TableVarName="tabledtBB8PGReadingsTable" msprop:Generator_UserTableName="dtBB8PGReadingsTable">
+        <xs:element name="dtBB8PGReadings" msprop:Generator_RowEvHandlerName="dtBB8PGReadingsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8PGReadingsRowDeleted" msprop:Generator_RowDeletingName="dtBB8PGReadingsRowDeleting" msprop:Generator_RowEvArgName="dtBB8PGReadingsRowChangeEvent" msprop:Generator_TablePropName="dtBB8PGReadings" msprop:Generator_RowChangedName="dtBB8PGReadingsRowChanged" msprop:Generator_UserTableName="dtBB8PGReadings" msprop:Generator_RowChangingName="dtBB8PGReadingsRowChanging" msprop:Generator_RowClassName="dtBB8PGReadingsRow" msprop:Generator_TableClassName="dtBB8PGReadingsDataTable" msprop:Generator_TableVarName="tabledtBB8PGReadings">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="BB8PGReadings_InspectionPoints" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_InspectionPoints" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_InspectionPointsColumn" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_InspectionPoints" msprop:Generator_UserColumnName="BB8PGReadings_InspectionPoints">
+              <xs:element name="BB8PGReadings_InspectionPoints" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_InspectionPointsColumn" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_InspectionPoints" msprop:Generator_UserColumnName="BB8PGReadings_InspectionPoints" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_InspectionPoints">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="BB8PGReadings_BeforeIncreasingError" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_BeforeIncreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_BeforeIncreasingErrorColumn" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_BeforeIncreasingError" msprop:Generator_UserColumnName="BB8PGReadings_BeforeIncreasingError" minOccurs="0">
+              <xs:element name="BB8PGReadings_BeforeIncreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_BeforeIncreasingErrorColumn" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_BeforeIncreasingError" msprop:Generator_UserColumnName="BB8PGReadings_BeforeIncreasingError" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_BeforeIncreasingError" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="BB8PGReadings_BeforeDecreasingError" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_BeforeDecreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_BeforeDecreasingErrorColumn" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_BeforeDecreasingError" msprop:Generator_UserColumnName="BB8PGReadings_BeforeDecreasingError" minOccurs="0">
+              <xs:element name="BB8PGReadings_BeforeDecreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_BeforeDecreasingErrorColumn" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_BeforeDecreasingError" msprop:Generator_UserColumnName="BB8PGReadings_BeforeDecreasingError" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_BeforeDecreasingError" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="BB8PGReadings_AfterIncreasingError" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_AfterIncreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_AfterIncreasingErrorColumn" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_AfterIncreasingError" msprop:Generator_UserColumnName="BB8PGReadings_AfterIncreasingError" minOccurs="0">
+              <xs:element name="BB8PGReadings_AfterIncreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_AfterIncreasingErrorColumn" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_AfterIncreasingError" msprop:Generator_UserColumnName="BB8PGReadings_AfterIncreasingError" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_AfterIncreasingError" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="BB8PGReadings_AfterDecreasingError" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_AfterDecreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_AfterDecreasingErrorColumn" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_AfterDecreasingError" msprop:Generator_UserColumnName="BB8PGReadings_AfterDecreasingError" minOccurs="0">
+              <xs:element name="BB8PGReadings_AfterDecreasingError" msprop:Generator_ColumnPropNameInTable="BB8PGReadings_AfterDecreasingErrorColumn" msprop:Generator_ColumnPropNameInRow="BB8PGReadings_AfterDecreasingError" msprop:Generator_UserColumnName="BB8PGReadings_AfterDecreasingError" msprop:Generator_ColumnVarNameInTable="columnBB8PGReadings_AfterDecreasingError" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBB8Details" msprop:Generator_RowEvHandlerName="dtBB8DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8DetailsRowDeleted" msprop:Generator_RowDeletingName="dtBB8DetailsRowDeleting" msprop:Generator_RowEvArgName="dtBB8DetailsRowChangeEvent" msprop:Generator_TablePropName="dtBB8Details" msprop:Generator_RowChangedName="dtBB8DetailsRowChanged" msprop:Generator_UserTableName="dtBB8Details" msprop:Generator_RowChangingName="dtBB8DetailsRowChanging" msprop:Generator_RowClassName="dtBB8DetailsRow" msprop:Generator_TableClassName="dtBB8DetailsDataTable" msprop:Generator_TableVarName="tabledtBB8Details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Machine_Name" msprop:Generator_ColumnPropNameInTable="Machine_NameColumn" msprop:Generator_ColumnPropNameInRow="Machine_Name" msprop:Generator_UserColumnName="Machine_Name" msprop:Generator_ColumnVarNameInTable="columnMachine_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cycle_Name" msprop:Generator_ColumnPropNameInTable="Cycle_NameColumn" msprop:Generator_ColumnPropNameInRow="Cycle_Name" msprop:Generator_UserColumnName="Cycle_Name" msprop:Generator_ColumnVarNameInTable="columnCycle_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_Name" msprop:Generator_ColumnPropNameInTable="Device_NameColumn" msprop:Generator_ColumnPropNameInRow="Device_Name" msprop:Generator_UserColumnName="Device_Name" msprop:Generator_ColumnVarNameInTable="columnDevice_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_ControlID" msprop:Generator_ColumnPropNameInTable="Device_ControlIDColumn" msprop:Generator_ColumnPropNameInRow="Device_ControlID" msprop:Generator_UserColumnName="Device_ControlID" msprop:Generator_ColumnVarNameInTable="columnDevice_ControlID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_Make" msprop:Generator_ColumnPropNameInTable="Device_MakeColumn" msprop:Generator_ColumnPropNameInRow="Device_Make" msprop:Generator_UserColumnName="Device_Make" msprop:Generator_ColumnVarNameInTable="columnDevice_Make" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_Model" msprop:Generator_ColumnPropNameInTable="Device_ModelColumn" msprop:Generator_ColumnPropNameInRow="Device_Model" msprop:Generator_UserColumnName="Device_Model" msprop:Generator_ColumnVarNameInTable="columnDevice_Model" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_LHRangeCombined" msprop:Generator_ColumnPropNameInTable="Device_LHRangeCombinedColumn" msprop:Generator_ColumnPropNameInRow="Device_LHRangeCombined" msprop:Generator_UserColumnName="Device_LHRangeCombined" msprop:Generator_ColumnVarNameInTable="columnDevice_LHRangeCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_LCCombined" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="Device_LCCombinedColumn" msprop:Generator_ColumnPropNameInRow="Device_LCCombined" msprop:Generator_UserColumnName="Device_LCCombined" msprop:Generator_ColumnVarNameInTable="columnDevice_LCCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_AccuracyCombined" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="Device_AccuracyCombinedColumn" msprop:Generator_ColumnPropNameInRow="Device_AccuracyCombined" msprop:Generator_UserColumnName="Device_AccuracyCombined" msprop:Generator_ColumnVarNameInTable="columnDevice_AccuracyCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_OPRangeCombined" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="Device_OPRangeCombinedColumn" msprop:Generator_ColumnPropNameInRow="Device_OPRangeCombined" msprop:Generator_UserColumnName="Device_OPRangeCombined" msprop:Generator_ColumnVarNameInTable="columnDevice_OPRangeCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="201" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inst_Name" msprop:Generator_ColumnPropNameInTable="Inst_NameColumn" msprop:Generator_ColumnPropNameInRow="Inst_Name" msprop:Generator_UserColumnName="Inst_Name" msprop:Generator_ColumnVarNameInTable="columnInst_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inst_ControlIDCombined" msprop:Generator_ColumnPropNameInTable="Inst_ControlIDCombinedColumn" msprop:Generator_ColumnPropNameInRow="Inst_ControlIDCombined" msprop:Generator_UserColumnName="Inst_ControlIDCombined" msprop:Generator_ColumnVarNameInTable="columnInst_ControlIDCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Device_JudgementCombined" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Device_JudgementCombined" msprop:Generator_ColumnPropNameInTable="Device_JudgementCombinedColumn" msprop:Generator_ColumnPropNameInRow="Device_JudgementCombined" msprop:Generator_ColumnVarNameInTable="columnDevice_JudgementCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtTempHumidity" msprop:Generator_RowEvHandlerName="dtTempHumidityRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTempHumidityRowDeleted" msprop:Generator_RowDeletingName="dtTempHumidityRowDeleting" msprop:Generator_RowEvArgName="dtTempHumidityRowChangeEvent" msprop:Generator_TablePropName="dtTempHumidity" msprop:Generator_RowChangedName="dtTempHumidityRowChanged" msprop:Generator_UserTableName="dtTempHumidity" msprop:Generator_RowChangingName="dtTempHumidityRowChanging" msprop:Generator_RowClassName="dtTempHumidityRow" msprop:Generator_TableClassName="dtTempHumidityDataTable" msprop:Generator_TableVarName="tabledtTempHumidity">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TempHumidityCombined" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TempHumidityCombined" msprop:Generator_ColumnPropNameInTable="TempHumidityCombinedColumn" msprop:Generator_ColumnPropNameInRow="TempHumidityCombined" msprop:Generator_ColumnVarNameInTable="columnTempHumidityCombined" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="53" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBB8XMReadings" msprop:Generator_RowClassName="dtBB8XMReadingsRow" msprop:Generator_RowEvHandlerName="dtBB8XMReadingsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8XMReadingsRowDeleted" msprop:Generator_RowDeletingName="dtBB8XMReadingsRowDeleting" msprop:Generator_RowEvArgName="dtBB8XMReadingsRowChangeEvent" msprop:Generator_TablePropName="dtBB8XMReadings" msprop:Generator_RowChangedName="dtBB8XMReadingsRowChanged" msprop:Generator_UserTableName="dtBB8XMReadings" msprop:Generator_RowChangingName="dtBB8XMReadingsRowChanging" msprop:Generator_TableClassName="dtBB8XMReadingsDataTable" msprop:Generator_TableVarName="tabledtBB8XMReadings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BB8XMReadings_SetValueItem" msprop:Generator_UserColumnName="BB8XMReadings_SetValueItem" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_SetValueItemColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_SetValueItem" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_SetValueItem">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8XMReadings_BeforeAdjustmentPanelDisplay" msprop:Generator_UserColumnName="BB8XMReadings_BeforeAdjustmentPanelDisplay" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_BeforeAdjustmentPanelDisplayColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_BeforeAdjustmentPanelDisplay" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_BeforeAdjustmentPanelDisplay" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8XMReadings_BeforeAdjustmentTachometerMeasured" msprop:Generator_UserColumnName="BB8XMReadings_BeforeAdjustmentTachometerMeasured" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_BeforeAdjustmentTachometerMeasuredColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_BeforeAdjustmentTachometerMeasured" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_BeforeAdjustmentTachometerMeasured" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8XMReadings_BeforeAdjustmentError" msprop:Generator_UserColumnName="BB8XMReadings_BeforeAdjustmentError" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_BeforeAdjustmentErrorColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_BeforeAdjustmentError" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_BeforeAdjustmentError" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8XMReadings_AfterAdjustmentPanelDisplay" msprop:Generator_UserColumnName="BB8XMReadings_AfterAdjustmentPanelDisplay" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_AfterAdjustmentPanelDisplayColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_AfterAdjustmentPanelDisplay" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_AfterAdjustmentPanelDisplay" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8XMReadings_AfterAdjustmentTachometerMeasured" msprop:Generator_UserColumnName="BB8XMReadings_AfterAdjustmentTachometerMeasured" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_AfterAdjustmentTachometerMeasuredColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_AfterAdjustmentTachometerMeasured" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_AfterAdjustmentTachometerMeasured" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8XMReadings_AfterAdjustmentError" msprop:Generator_UserColumnName="BB8XMReadings_AfterAdjustmentError" msprop:Generator_ColumnPropNameInTable="BB8XMReadings_AfterAdjustmentErrorColumn" msprop:Generator_ColumnPropNameInRow="BB8XMReadings_AfterAdjustmentError" msprop:Generator_ColumnVarNameInTable="columnBB8XMReadings_AfterAdjustmentError" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBB8WSReadings" msprop:Generator_RowEvHandlerName="dtBB8WSReadingsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8WSReadingsRowDeleted" msprop:Generator_RowDeletingName="dtBB8WSReadingsRowDeleting" msprop:Generator_RowEvArgName="dtBB8WSReadingsRowChangeEvent" msprop:Generator_TablePropName="dtBB8WSReadings" msprop:Generator_RowChangedName="dtBB8WSReadingsRowChanged" msprop:Generator_RowChangingName="dtBB8WSReadingsRowChanging" msprop:Generator_TableClassName="dtBB8WSReadingsDataTable" msprop:Generator_RowClassName="dtBB8WSReadingsRow" msprop:Generator_TableVarName="tabledtBB8WSReadings" msprop:Generator_UserTableName="dtBB8WSReadings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BB8WSReadings_StdWtApplied" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_StdWtApplied" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_StdWtAppliedColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_StdWtApplied" msprop:Generator_UserColumnName="BB8WSReadings_StdWtApplied">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8WSReadings_BeforeAdjustmentDisplayIncreasing" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_BeforeAdjustmentDisplayIncreasing" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_BeforeAdjustmentDisplayIncreasingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_BeforeAdjustmentDisplayIncreasing" msprop:Generator_UserColumnName="BB8WSReadings_BeforeAdjustmentDisplayIncreasing" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8WSReadings_BeforeAdjustmentDisplayDecreasing" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_BeforeAdjustmentDisplayDecreasing" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_BeforeAdjustmentDisplayDecreasingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_BeforeAdjustmentDisplayDecreasing" msprop:Generator_UserColumnName="BB8WSReadings_BeforeAdjustmentDisplayDecreasing" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8WSReadings_BeforeAdjustmentMaxError" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_BeforeAdjustmentMaxError" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_BeforeAdjustmentMaxErrorColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_BeforeAdjustmentMaxError" msprop:Generator_UserColumnName="BB8WSReadings_BeforeAdjustmentMaxError" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8WSReadings_AfterAdjustmentDisplayIncreasing" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_AfterAdjustmentDisplayIncreasing" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_AfterAdjustmentDisplayIncreasingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_AfterAdjustmentDisplayIncreasing" msprop:Generator_UserColumnName="BB8WSReadings_AfterAdjustmentDisplayIncreasing" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8WSReadings_AfterAdjustmentDisplayDecreasing" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_AfterAdjustmentDisplayDecreasing" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_AfterAdjustmentDisplayDecreasingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_AfterAdjustmentDisplayDecreasing" msprop:Generator_UserColumnName="BB8WSReadings_AfterAdjustmentDisplayDecreasing" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8WSReadings_AfterAdjustmentMaxError" msprop:Generator_ColumnPropNameInRow="BB8WSReadings_AfterAdjustmentMaxError" msprop:Generator_ColumnPropNameInTable="BB8WSReadings_AfterAdjustmentMaxErrorColumn" msprop:Generator_ColumnVarNameInTable="columnBB8WSReadings_AfterAdjustmentMaxError" msprop:Generator_UserColumnName="BB8WSReadings_AfterAdjustmentMaxError" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBB8TFReadings" msprop:Generator_RowEvHandlerName="dtBB8TFReadingsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8TFReadingsRowDeleted" msprop:Generator_RowDeletingName="dtBB8TFReadingsRowDeleting" msprop:Generator_RowEvArgName="dtBB8TFReadingsRowChangeEvent" msprop:Generator_TablePropName="dtBB8TFReadings" msprop:Generator_RowChangedName="dtBB8TFReadingsRowChanged" msprop:Generator_RowChangingName="dtBB8TFReadingsRowChanging" msprop:Generator_TableClassName="dtBB8TFReadingsDataTable" msprop:Generator_RowClassName="dtBB8TFReadingsRow" msprop:Generator_TableVarName="tabledtBB8TFReadings" msprop:Generator_UserTableName="dtBB8TFReadings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BB8TFReadings_InspectionPoint" msprop:Generator_ColumnPropNameInRow="BB8TFReadings_InspectionPoint" msprop:Generator_ColumnPropNameInTable="BB8TFReadings_InspectionPointColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TFReadings_InspectionPoint" msprop:Generator_UserColumnName="BB8TFReadings_InspectionPoint">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TFReadings_BeforeAdjustmentDisplayActual" msprop:Generator_ColumnPropNameInRow="BB8TFReadings_BeforeAdjustmentDisplayActual" msprop:Generator_ColumnPropNameInTable="BB8TFReadings_BeforeAdjustmentDisplayActualColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TFReadings_BeforeAdjustmentDisplayActual" msprop:Generator_UserColumnName="BB8TFReadings_BeforeAdjustmentDisplayActual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TFReadings_BeforeAdjustmentDisplayDifference" msprop:Generator_ColumnPropNameInRow="BB8TFReadings_BeforeAdjustmentDisplayDifference" msprop:Generator_ColumnPropNameInTable="BB8TFReadings_BeforeAdjustmentDisplayDifferenceColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TFReadings_BeforeAdjustmentDisplayDifference" msprop:Generator_UserColumnName="BB8TFReadings_BeforeAdjustmentDisplayDifference" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TFReadings_AfterAdjustmentDisplayActual" msprop:Generator_ColumnPropNameInRow="BB8TFReadings_AfterAdjustmentDisplayActual" msprop:Generator_ColumnPropNameInTable="BB8TFReadings_AfterAdjustmentDisplayActualColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TFReadings_AfterAdjustmentDisplayActual" msprop:Generator_UserColumnName="BB8TFReadings_AfterAdjustmentDisplayActual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TFReadings_AfterAdjustmentDisplayDifference" msprop:Generator_ColumnPropNameInRow="BB8TFReadings_AfterAdjustmentDisplayDifference" msprop:Generator_ColumnPropNameInTable="BB8TFReadings_AfterAdjustmentDisplayDifferenceColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TFReadings_AfterAdjustmentDisplayDifference" msprop:Generator_UserColumnName="BB8TFReadings_AfterAdjustmentDisplayDifference" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBB8TRReadings" msprop:Generator_RowEvHandlerName="dtBB8TRReadingsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBB8TRReadingsRowDeleted" msprop:Generator_RowDeletingName="dtBB8TRReadingsRowDeleting" msprop:Generator_RowEvArgName="dtBB8TRReadingsRowChangeEvent" msprop:Generator_TablePropName="dtBB8TRReadings" msprop:Generator_RowChangedName="dtBB8TRReadingsRowChanged" msprop:Generator_RowChangingName="dtBB8TRReadingsRowChanging" msprop:Generator_TableClassName="dtBB8TRReadingsDataTable" msprop:Generator_RowClassName="dtBB8TRReadingsRow" msprop:Generator_TableVarName="tabledtBB8TRReadings" msprop:Generator_UserTableName="dtBB8TRReadings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BB8TRReadings_InputDCVoltage" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_InputDCVoltage" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_InputDCVoltageColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_InputDCVoltage" msprop:Generator_UserColumnName="BB8TRReadings_InputDCVoltage">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel1ChartReading" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel1ChartReading" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel1ChartReadingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel1ChartReading" msprop:Generator_UserColumnName="BB8TRReadings_Channel1ChartReading" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel1Display" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel1Display" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel1DisplayColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel1Display" msprop:Generator_UserColumnName="BB8TRReadings_Channel1Display" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel2ChartReading" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel2ChartReading" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel2ChartReadingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel2ChartReading" msprop:Generator_UserColumnName="BB8TRReadings_Channel2ChartReading" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel2Display" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel2Display" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel2DisplayColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel2Display" msprop:Generator_UserColumnName="BB8TRReadings_Channel2Display" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel3ChartReading" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel3ChartReading" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel3ChartReadingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel3ChartReading" msprop:Generator_UserColumnName="BB8TRReadings_Channel3ChartReading" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel3Display" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel3Display" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel3DisplayColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel3Display" msprop:Generator_UserColumnName="BB8TRReadings_Channel3Display" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel4ChartReading" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel4ChartReading" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel4ChartReadingColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel4ChartReading" msprop:Generator_UserColumnName="BB8TRReadings_Channel4ChartReading" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BB8TRReadings_Channel4Display" msprop:Generator_ColumnPropNameInRow="BB8TRReadings_Channel4Display" msprop:Generator_ColumnPropNameInTable="BB8TRReadings_Channel4DisplayColumn" msprop:Generator_ColumnVarNameInTable="columnBB8TRReadings_Channel4Display" msprop:Generator_UserColumnName="BB8TRReadings_Channel4Display" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

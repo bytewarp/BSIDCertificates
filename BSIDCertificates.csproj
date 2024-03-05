@@ -64,6 +64,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BridgestoneCalDataSet.cs">
+      <DependentUpon>BridgestoneCalDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BridgestoneCalDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
