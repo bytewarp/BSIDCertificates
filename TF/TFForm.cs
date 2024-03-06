@@ -85,7 +85,7 @@ namespace BSIDCertificates.TF
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8TFReadings data.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-TF-10-Readings data.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
@@ -128,7 +128,7 @@ namespace BSIDCertificates.TF
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8TF Details.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-TF-10-Details.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
@@ -159,7 +159,7 @@ namespace BSIDCertificates.TF
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8PG TempHumidity Details.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-TF-10-TempHumidity Details.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;

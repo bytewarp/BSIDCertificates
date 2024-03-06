@@ -85,7 +85,7 @@ namespace BSIDCertificates.PG
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8PGReadings data.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-PG-08-Readings data.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
@@ -128,7 +128,7 @@ namespace BSIDCertificates.PG
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8PG Details.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-PG-08-Details.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
@@ -159,7 +159,7 @@ namespace BSIDCertificates.PG
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8PG TempHumidity Details.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-PG-08-TempHumidity Details.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;

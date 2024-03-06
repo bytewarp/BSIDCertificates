@@ -86,7 +86,7 @@ namespace BSIDCertificates.XM
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8XMReadings data.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-XM-12-Readings data.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
@@ -129,7 +129,7 @@ namespace BSIDCertificates.XM
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8XM Details.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-XM-12-Details.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
@@ -160,7 +160,7 @@ namespace BSIDCertificates.XM
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB8XM TempHumidity Details.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-XM-12-TempHumidity Details.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;

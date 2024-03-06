@@ -2277,7 +2277,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox254</rd:DefaultName>
-          <Top>0cm</Top>
           <Left>0.06965cm</Left>
           <Height>2.3cm</Height>
           <Width>11.64231cm</Width>
@@ -2310,7 +2309,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox255</rd:DefaultName>
-          <Top>0cm</Top>
           <Left>11.71196cm</Left>
           <Height>0.5752cm</Height>
           <Width>6.88023cm</Width>
@@ -2489,7 +2487,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox261</rd:DefaultName>
-          <Top>0cm</Top>
           <Left>18.59219cm</Left>
           <Height>1.24106cm</Height>
           <Width>3.10184cm</Width>
@@ -2537,7 +2534,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox261</rd:DefaultName>
-          <Top>0cm</Top>
           <Left>21.69403cm</Left>
           <Height>1.24106cm</Height>
           <Width>3.224cm</Width>
