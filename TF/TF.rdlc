@@ -563,7 +563,7 @@
         <Top>0.28345cm</Top>
         <Left>3.20017cm</Left>
         <Height>2.33311cm</Height>
-        <Width>18.76733cm</Width>
+        <Width>18.76732cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1046,11 +1046,13 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>√</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -1063,6 +1065,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1237,8 +1240,23 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>TITLE: THERMOCOUPLER/RTD</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>INSPECTION REPORT</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
@@ -1423,11 +1441,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BSIDp-T-SOKU-03</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -1440,6 +1463,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1453,11 +1477,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BSIDp-F-PED/MC-30</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -1470,6 +1499,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -2165,11 +2195,15 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>18/11/2022</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox27</rd:DefaultName>
@@ -2320,7 +2354,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>PASS</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2333,7 +2367,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>PASS</Value>
+                  <Value />
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2354,9 +2388,10 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
+            <PaddingTop>10pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>

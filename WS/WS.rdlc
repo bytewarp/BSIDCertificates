@@ -436,7 +436,7 @@
         <Top>0.3175cm</Top>
         <Left>0.08025cm</Left>
         <Height>2.33311cm</Height>
-        <Width>12.01895cm</Width>
+        <Width>12.01893cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -877,7 +877,7 @@
         <Top>0.3152cm</Top>
         <Left>12.90079cm</Left>
         <Height>2.33311cm</Height>
-        <Width>12.0234cm</Width>
+        <Width>12.02341cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1361,11 +1361,13 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>√</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -1493,7 +1495,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>MASTER GUAGE :</Value>
+                  <Value>MASTER GUAGE : STANDARD WEIGHTS</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -1528,8 +1530,23 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>TITLE: WEIGHING SCLAE </Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>INSPECTION REPORT</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
@@ -1558,8 +1575,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BB#8</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1591,8 +1610,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>1/1 YEAR</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1655,10 +1676,14 @@
               <TextRuns>
                 <TextRun>
                   <Value />
-                  <Style />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -1671,6 +1696,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1714,23 +1740,29 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BSIDp-T-SOKU-03</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.50906cm</Top>
           <Left>19.64196cm</Left>
           <Height>0.78332cm</Height>
-          <Width>2.32554cm</Width>
+          <Width>2.31667cm</Width>
           <ZIndex>22</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1744,11 +1776,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BSIDp-F-PED/MC-06</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -1761,6 +1798,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1949,7 +1987,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>300 Kg</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1982,7 +2020,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>BB#8</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2015,7 +2053,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value xml:space="preserve"> </Value>
+                  <Value> YAMATO</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2048,8 +2086,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BB#8-WS-01</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -2081,7 +2121,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>CARBON WT SCALE</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2324,7 +2364,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>0.1 Kg</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2357,7 +2397,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>± 0.2 Kg</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2390,7 +2430,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>22 °C 57 %</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2423,8 +2463,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>± 500g &lt; 15 Kg, ± 2% &gt; 15 Kg</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -2456,11 +2498,15 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>18/11/2022</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox27</rd:DefaultName>
@@ -2486,7 +2532,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>15 Kg - 300 Kg</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2556,6 +2602,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox254</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>0.07581cm</Left>
           <Height>2.3cm</Height>
           <Width>11.64231cm</Width>
@@ -2588,6 +2635,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox255</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>11.71812cm</Left>
           <Height>0.5752cm</Height>
           <Width>6.88023cm</Width>
@@ -2707,7 +2755,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>PASS</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2720,7 +2768,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>PASS</Value>
+                  <Value />
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2741,9 +2789,10 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
+            <PaddingTop>10pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
@@ -2796,6 +2845,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox261</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>18.59835cm</Left>
           <Height>1.24106cm</Height>
           <Width>3.10184cm</Width>
@@ -2843,6 +2893,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox261</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>21.70019cm</Left>
           <Height>1.24106cm</Height>
           <Width>3.224cm</Width>

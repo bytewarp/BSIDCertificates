@@ -433,7 +433,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>ERROR (kg/cm²</Value>
+                                <Value>ERROR (kg/cm²)</Value>
                                 <Style>
                                   <FontSize>9pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -1054,11 +1054,13 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>√</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -1071,6 +1073,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1245,8 +1248,23 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>TITLE : GAUGE &amp; CONTROL</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>INSPECTION REPORT</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
@@ -1431,11 +1449,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BSIDp-T-SOKU-03</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -1448,6 +1471,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1461,11 +1485,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>BSIDp-F-PED/MC-31A</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -1478,6 +1507,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -2177,11 +2207,15 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>18/11/2022</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox27</rd:DefaultName>
@@ -2194,6 +2228,7 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -2270,6 +2305,12 @@
                   <Value>REMARKS :- </Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>1 MPa = 10.19 Kg/cm² conversion used during calibration</Value>
+                  <Style>
+                    <FontWeight>Normal</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -2428,7 +2469,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>PASS</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2441,7 +2482,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>PASS</Value>
+                  <Value />
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2462,9 +2503,10 @@
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
+            <PaddingTop>8pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
