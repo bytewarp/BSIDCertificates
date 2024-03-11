@@ -10,14 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BSIDCertificates.XM
+namespace BSIDCertificates.DS21
 {
-    public partial class XMForm : Form
+    public partial class DS21Form : Form
     {
-        DataTable dtBB8XMReadings = new DataTable();
+        DataTable dtBQCT1DS21Readings = new DataTable();
         DataTable dtDeviceDetails = new DataTable();
         DataTable dtTempHumidity = new DataTable();
-        public XMForm()
+        public DS21Form()
         {
             try
             {
@@ -30,35 +30,35 @@ namespace BSIDCertificates.XM
             }
         }
 
-        private void XMForm_Load(object sender, EventArgs e)
+        private void DS21Form_Load(object sender, EventArgs e)
         {
             try
             {
-                dtBB8XMReadings = GetBB8XMReadingsDetails();
-                dtDeviceDetails = GetBB8XMDetails();
+                dtBQCT1DS21Readings = GetBQCT1DS21ReadingsDetails();
+                dtDeviceDetails = GetBQCT1DS21Details();
                 dtTempHumidity = GetTempHumidity();
 
                 reportViewer1.LocalReport.DataSources.Clear();
 
-                ReportDataSource dsBB8XMReadings = new ReportDataSource("dsBB8XMReadings", dtBB8XMReadings);
-                ReportDataSource dsBB8XMDetails = new ReportDataSource("dsBB8XMDetails", dtDeviceDetails);
+                ReportDataSource dsBQCT1DS21Readings = new ReportDataSource("dsBQCT1DS21Readings", dtBQCT1DS21Readings);
+                ReportDataSource dsBQCT1DS21Details = new ReportDataSource("dsBQCT1DS21Details", dtDeviceDetails);
                 ReportDataSource dsTempHumidity = new ReportDataSource("dsTempHumidity", dtTempHumidity);
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
 
-                this.reportViewer1.LocalReport.DataSources.Add(dsBB8XMReadings);
-                this.reportViewer1.LocalReport.DataSources.Add(dsBB8XMDetails);
+                this.reportViewer1.LocalReport.DataSources.Add(dsBQCT1DS21Readings);
+                this.reportViewer1.LocalReport.DataSources.Add(dsBQCT1DS21Details);
                 this.reportViewer1.LocalReport.DataSources.Add(dsTempHumidity);
 
                 this.reportViewer1.RefreshReport();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
             }
         }
-        private DataTable GetBB8XMReadingsDetails()
+        private DataTable GetBQCT1DS21ReadingsDetails()
         {
             try
             {
@@ -66,33 +66,32 @@ namespace BSIDCertificates.XM
                 using (SqlConnection con = new SqlConnection(constr))
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("select BB8XMReadings_SetValueItem, BB8XMReadings_BeforeAdjustmentPanelDisplay, BB8XMReadings_BeforeAdjustmentTachometerMeasured, " +
-                        "BB8XMReadings_BeforeAdjustmentError, BB8XMReadings_AfterAdjustmentPanelDisplay, BB8XMReadings_AfterAdjustmentTachometerMeasured, " +
-                        "BB8XMReadings_AfterAdjustmentError FROM tblBB8XMReadingsMaster " +
-                        "ORDER BY CAST(BB8XMReadings_SetValueItem AS DECIMAL(18,2)) ", con);
+                    SqlCommand cmd = new SqlCommand("select BQCTDS21_NominalValue, BQCTDS21_MeasuredValue, BQCTDS21_Error " +
+                        "FROM tblBQCTDS21ReadingsMaster " +
+                        "ORDER BY CAST(BQCTDS21_NominalValue AS DECIMAL(18,2)) ", con);
                     //cmd.ExecuteNonQuery();
 
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
                         cmd.Connection = con;
                         sda.SelectCommand = cmd;
-                        using (BridgestoneCalDataSet dsBB8XMReadings = new BridgestoneCalDataSet())
+                        using (BridgestoneCalDataSet dsBQCT1DS21Readings = new BridgestoneCalDataSet())
                         {
-                            sda.Fill(dtBB8XMReadings);
-                            return dtBB8XMReadings;
+                            sda.Fill(dtBQCT1DS21Readings);
+                            return dtBQCT1DS21Readings;
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Oops. Something went wrong while fetching the BB#8-XM-12-Readings data.");
+                MessageBox.Show("Oops. Something went wrong while fetching the BQCT#1-DS-21-Readings data.");
                 LogError _LE = new LogError();
                 _LE.LogDetails(ex);
                 return null;
             }
         }
-        private DataTable GetBB8XMDetails()
+        private DataTable GetBQCT1DS21Details()
         {
             try
             {
@@ -113,13 +112,13 @@ namespace BSIDCertificates.XM
                         "join tblDeviceInstMaster on tblDeviceMaster.Device_ID = tblDeviceInstMaster.Device_ID " +
                         "join tblInstrumentMaster on tblDeviceInstMaster.Inst_ID = tblInstrumentMaster.Inst_ID " +
                         "where tblDeviceMaster.Device_ControlID=@Device_ControlID ", con);
-                    cmd.Parameters.AddWithValue("@Device_ControlID", "BB#8-XM-12");
+                    cmd.Parameters.AddWithValue("@Device_ControlID", "BQCT#1-DS-21");
 
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
                         cmd.Connection = con;
                         sda.SelectCommand = cmd;
-                        using (BridgestoneCalDataSet dsBB8XMDetails = new BridgestoneCalDataSet())
+                        using (BridgestoneCalDataSet dsBQCT1DS21Details = new BridgestoneCalDataSet())
                         {
                             sda.Fill(dtDeviceDetails);
                             return dtDeviceDetails;

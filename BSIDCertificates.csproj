@@ -72,12 +72,42 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BridgestoneCalDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS21\DS21Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS21\DS21Form.Designer.cs">
+      <DependentUpon>DS21Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS22\DS22Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS22\DS22Form.Designer.cs">
+      <DependentUpon>DS22Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS24\DS24Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS24\DS24Form.Designer.cs">
+      <DependentUpon>DS24Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS25\DS25Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS25\DS25Form.Designer.cs">
+      <DependentUpon>DS25Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogError.cs" />
     <Compile Include="PG\PGForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PG\PGForm.Designer.cs">
       <DependentUpon>PGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TC\TCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TC\TCForm.Designer.cs">
+      <DependentUpon>TCForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TF\TFForm.cs">
       <SubType>Form</SubType>
@@ -106,9 +136,29 @@
     <Compile Include="XM\XMForm.Designer.cs">
       <DependentUpon>XMForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DS21\DS21.rdlc" />
+    <EmbeddedResource Include="DS21\DS21Form.resx">
+      <DependentUpon>DS21Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DS22\DS22.rdlc" />
+    <EmbeddedResource Include="DS22\DS22Form.resx">
+      <DependentUpon>DS22Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DS24\DS24.rdlc" />
+    <EmbeddedResource Include="DS24\DS24Form.resx">
+      <DependentUpon>DS24Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DS25\DS25.rdlc" />
+    <EmbeddedResource Include="DS25\DS25Form.resx">
+      <DependentUpon>DS25Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PG\PG.rdlc" />
     <EmbeddedResource Include="PG\PGForm.resx">
       <DependentUpon>PGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TC\TC.rdlc" />
+    <EmbeddedResource Include="TC\TCForm.resx">
+      <DependentUpon>TCForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TEST.rdlc" />
     <EmbeddedResource Include="TF\TF.rdlc" />
