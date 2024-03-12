@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AS\ASForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AS\ASForm.Designer.cs">
+      <DependentUpon>ASForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BridgestoneCalDataSet.cs">
       <DependentUpon>BridgestoneCalDataSet.xsd</DependentUpon>
     </Compile>
@@ -103,6 +109,18 @@
     <Compile Include="PG\PGForm.Designer.cs">
       <DependentUpon>PGForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PH\PHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PH\PHForm.Designer.cs">
+      <DependentUpon>PHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RS\RSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RS\RSForm.Designer.cs">
+      <DependentUpon>RSForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TC\TCForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +139,12 @@
     <Compile Include="TR\TRForm.Designer.cs">
       <DependentUpon>TRForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WS29\WS29Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WS29\WS29Form.Designer.cs">
+      <DependentUpon>WS29Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="WS\WSForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,12 +154,22 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="XM01\XM01Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XM01\XM01Form.Designer.cs">
+      <DependentUpon>XM01Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="XM\XMForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XM\XMForm.Designer.cs">
       <DependentUpon>XMForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AS\AS.rdlc" />
+    <EmbeddedResource Include="AS\ASForm.resx">
+      <DependentUpon>ASForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DS21\DS21.rdlc" />
     <EmbeddedResource Include="DS21\DS21Form.resx">
       <DependentUpon>DS21Form.cs</DependentUpon>
@@ -156,6 +190,14 @@
     <EmbeddedResource Include="PG\PGForm.resx">
       <DependentUpon>PGForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PH\PH.rdlc" />
+    <EmbeddedResource Include="PH\PHForm.resx">
+      <DependentUpon>PHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RS\RS.rdlc" />
+    <EmbeddedResource Include="RS\RSForm.resx">
+      <DependentUpon>RSForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TC\TC.rdlc" />
     <EmbeddedResource Include="TC\TCForm.resx">
       <DependentUpon>TCForm.cs</DependentUpon>
@@ -169,6 +211,10 @@
     <EmbeddedResource Include="TR\TRForm.resx">
       <DependentUpon>TRForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WS29\WS29.rdlc" />
+    <EmbeddedResource Include="WS29\WS29Form.resx">
+      <DependentUpon>WS29Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WS\WS.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,6 +227,10 @@
     </Compile>
     <EmbeddedResource Include="WS\WSForm.resx">
       <DependentUpon>WSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XM01\XM01.rdlc" />
+    <EmbeddedResource Include="XM01\XM01Form.resx">
+      <DependentUpon>XM01Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XM\XM.rdlc" />
     <EmbeddedResource Include="XM\XMForm.resx">
