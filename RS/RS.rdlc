@@ -116,38 +116,38 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.42011cm</Width>
+              <Width>2.69528cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.96089cm</Width>
+              <Width>3.08789cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.40204cm</Width>
+              <Width>2.86616cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.77517cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.10184cm</Width>
+              <Width>3.75801cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.75989cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.64233cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox126">
+                    <Textbox Name="BQCTRS28_BeforeActual">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BQCTRS28_BeforeActual.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -156,7 +156,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox126</rd:DefaultName>
+                      <rd:DefaultName>BQCTRS28_BeforeActual</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -172,14 +172,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox123">
+                    <Textbox Name="BQCTRS28_BeforeDifference">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BQCTRS28_BeforeDifference.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -188,7 +188,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox123</rd:DefaultName>
+                      <rd:DefaultName>BQCTRS28_BeforeDifference</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -204,14 +204,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox117">
+                    <Textbox Name="BQCTRS28_BeforeError">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BQCTRS28_BeforeError.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -220,7 +220,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox117</rd:DefaultName>
+                      <rd:DefaultName>BQCTRS28_BeforeError</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -236,14 +236,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox132">
+                    <Textbox Name="BQCTRS28_AfterActual">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BQCTRS28_AfterActual.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -252,7 +252,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox132</rd:DefaultName>
+                      <rd:DefaultName>BQCTRS28_AfterActual</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -268,14 +268,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox135">
+                    <Textbox Name="BQCTRS28_AfterDifference">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BQCTRS28_AfterDifference.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -284,7 +284,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox135</rd:DefaultName>
+                      <rd:DefaultName>BQCTRS28_AfterDifference</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -300,14 +300,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox138">
+                    <Textbox Name="BQCTRS28_AfterError">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BQCTRS28_AfterError.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -316,7 +316,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox138</rd:DefaultName>
+                      <rd:DefaultName>BQCTRS28_AfterError</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -383,7 +383,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.55767cm</Size>
+                        <Size>0.9175cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox125">
                             <CanGrow>true</CanGrow>
@@ -392,7 +392,21 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>ACTUAL ( Ω)</Value>
+                                    <Value>ACTUAL </Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>( Ω)</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -421,7 +435,7 @@
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.55767cm</Size>
+                        <Size>0.9175cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox122">
                             <CanGrow>true</CanGrow>
@@ -430,7 +444,21 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>DIFFERENCE ( Ω)</Value>
+                                    <Value>DIFFERENCE </Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>( Ω)</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -459,7 +487,7 @@
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.55767cm</Size>
+                        <Size>0.9175cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox120">
                             <CanGrow>true</CanGrow>
@@ -468,7 +496,21 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>% ERROR ( Ω)</Value>
+                                    <Value>% ERROR</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value> ( Ω)</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -537,7 +579,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.55767cm</Size>
+                        <Size>0.9175cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox127">
                             <CanGrow>true</CanGrow>
@@ -546,7 +588,21 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>ACTUAL ( Ω)</Value>
+                                    <Value>ACTUAL </Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>( Ω)</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -575,7 +631,7 @@
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.55767cm</Size>
+                        <Size>0.9175cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox124">
                             <CanGrow>true</CanGrow>
@@ -584,7 +640,21 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>DIFFERENCE ( Ω)</Value>
+                                    <Value>DIFFERENCE</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value> ( Ω)</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -613,7 +683,7 @@
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>0.55767cm</Size>
+                        <Size>0.9175cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox121">
                             <CanGrow>true</CanGrow>
@@ -622,7 +692,21 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>% ERROR ( Ω)</Value>
+                                    <Value>% ERROR </Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>( Ω)</Value>
                                     <Style>
                                       <FontSize>8pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -658,22 +742,27 @@
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
-              <Group Name="RowGroup">
+              <Group Name="BQCTRS28_Resistances">
                 <GroupExpressions>
-                  <GroupExpression />
+                  <GroupExpression>=Fields!BQCTRS28_Resistances.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!BQCTRS28_Resistances.Value</Value>
+                </SortExpression>
+              </SortExpressions>
               <TablixHeader>
                 <Size>2.5cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox115">
+                  <Textbox Name="BQCTRS28_Resistances">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value />
+                            <Value>=Fields!BQCTRS28_Resistances.Value</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -682,7 +771,7 @@
                         </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox115</rd:DefaultName>
+                    <rd:DefaultName>BQCTRS28_Resistances</rd:DefaultName>
                     <Style>
                       <Border>
                         <Style>Solid</Style>
@@ -701,14 +790,14 @@
                   <TablixHeader>
                     <Size>3.24393cm</Size>
                     <CellContents>
-                      <Textbox Name="Textbox141">
+                      <Textbox Name="BQCTRS28_MasterDisplay">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>=Fields!BQCTRS28_MasterDisplay.Value</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -717,7 +806,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox141</rd:DefaultName>
+                        <rd:DefaultName>BQCTRS28_MasterDisplay</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -736,10 +825,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>0.07237cm</Top>
-        <Left>0.94257cm</Left>
-        <Height>1.75767cm</Height>
-        <Width>21.62881cm</Width>
+        <DataSetName>dsBQCT1RS28Readings</DataSetName>
+        <Top>0.53804cm</Top>
+        <Left>0.96116cm</Left>
+        <Height>2.15983cm</Height>
+        <Width>23.68633cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -747,13 +837,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.9475cm</Height>
+    <Height>3.027cm</Height>
     <Style />
   </Body>
   <Width>25cm</Width>
   <Page>
     <PageHeader>
-      <Height>6.11717cm</Height>
+      <Height>6.45583cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -766,12 +856,13 @@
                 <TextRun>
                   <Value>CALIBRATION RECORD</Value>
                   <Style>
+                    <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Center</TextAlign>
+                <TextAlign>Left</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
@@ -800,7 +891,7 @@
                 <TextRun>
                   <Value>MACHINE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -814,7 +905,7 @@
                 <TextRun>
                   <Value>NAME</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -850,7 +941,7 @@
                 <TextRun>
                   <Value>INSPECTION</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -864,7 +955,7 @@
                 <TextRun>
                   <Value>CYCLE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -900,7 +991,7 @@
                 <TextRun>
                   <Value>PREPARED BY</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -914,7 +1005,7 @@
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -950,7 +1041,7 @@
                 <TextRun>
                   <Value>APPROVED BY</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -964,7 +1055,7 @@
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1000,7 +1091,7 @@
                 <TextRun>
                   <Value>REVISION NO.</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1014,7 +1105,7 @@
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1028,7 +1119,7 @@
           <Top>0.52763cm</Top>
           <Left>16.94429cm</Left>
           <Height>0.85399cm</Height>
-          <Width>2.69767cm</Width>
+          <Width>2.31667cm</Width>
           <ZIndex>5</ZIndex>
           <Style>
             <Border>
@@ -1050,7 +1141,7 @@
                 <TextRun>
                   <Value>REFERENCE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1062,9 +1153,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>0.52763cm</Top>
-          <Left>19.64196cm</Left>
+          <Left>19.26096cm</Left>
           <Height>0.85399cm</Height>
-          <Width>2.31667cm</Width>
+          <Width>2.69767cm</Width>
           <ZIndex>6</ZIndex>
           <Style>
             <Border>
@@ -1086,7 +1177,7 @@
                 <TextRun>
                   <Value>FORMAT NO.</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1120,7 +1211,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>TITLE : TEMPERATURE CONTROLLER</Value>
+                  <Value>TITLE:TEMPERATURE CONTROLLER</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1145,13 +1236,14 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>0.07138cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.05849cm</Height>
           <Width>5.35287cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1165,8 +1257,11 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>=First(Fields!Machine_Name.Value, "dsBQCT1RS28Details")</Value>
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1177,7 +1272,7 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>5.42425cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.05849cm</Height>
           <Width>2.24169cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
@@ -1198,8 +1293,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>=First(Fields!Cycle_Name.Value, "dsBQCT1RS28Details")</Value>
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -1210,7 +1307,7 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>7.66595cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.05849cm</Height>
           <Width>2.18967cm</Width>
           <ZIndex>10</ZIndex>
           <Style>
@@ -1231,23 +1328,43 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>B.H.NAYAK (SM MTE)</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>20/04/2012</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>9.85563cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.05849cm</Height>
           <Width>3.45968cm</Width>
           <ZIndex>11</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1261,23 +1378,43 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>ADITYA SHUKLA</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>(Sr.DGM PED) 20/04/2012</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>13.31531cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.05849cm</Height>
           <Width>3.62899cm</Width>
           <ZIndex>12</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1291,23 +1428,29 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>1/6-Dec-13</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>16.94429cm</Left>
-          <Height>0.78332cm</Height>
-          <Width>2.69767cm</Width>
+          <Height>1.05849cm</Height>
+          <Width>2.31667cm</Width>
           <ZIndex>13</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -1335,9 +1478,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
-          <Left>19.64196cm</Left>
-          <Height>0.78332cm</Height>
-          <Width>2.31667cm</Width>
+          <Left>19.26096cm</Left>
+          <Height>1.05849cm</Height>
+          <Width>2.69767cm</Width>
           <ZIndex>14</ZIndex>
           <Style>
             <Border>
@@ -1372,7 +1515,7 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.38162cm</Top>
           <Left>21.95862cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.05849cm</Height>
           <Width>2.97cm</Width>
           <ZIndex>15</ZIndex>
           <Style>
@@ -1420,7 +1563,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>2.42037cm</Top>
+          <Top>2.73787cm</Top>
           <Left>0.08026cm</Left>
           <Height>1.18382cm</Height>
           <Width>5.32176cm</Width>
@@ -1456,7 +1599,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox10</rd:DefaultName>
-          <Top>3.60419cm</Top>
+          <Top>3.92169cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.6cm</Height>
           <Width>3.28757cm</Width>
@@ -1487,7 +1630,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
-          <Top>3.60419cm</Top>
+          <Top>3.92169cm</Top>
           <Left>3.36783cm</Left>
           <Height>0.6cm</Height>
           <Width>2.03418cm</Width>
@@ -1519,7 +1662,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>4.20419cm</Top>
+          <Top>4.52169cm</Top>
           <Left>3.36783cm</Left>
           <Height>0.6cm</Height>
           <Width>2.03418cm</Width>
@@ -1550,7 +1693,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox15</rd:DefaultName>
-          <Top>4.80419cm</Top>
+          <Top>5.12169cm</Top>
           <Left>3.36783cm</Left>
           <Height>0.6266cm</Height>
           <Width>2.03418cm</Width>
@@ -1585,7 +1728,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>4.80419cm</Top>
+          <Top>5.12169cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.6266cm</Height>
           <Width>3.28757cm</Width>
@@ -1621,7 +1764,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
-          <Top>4.20419cm</Top>
+          <Top>4.52169cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.6cm</Height>
           <Width>3.28757cm</Width>
@@ -1649,6 +1792,30 @@
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
+                <TextRun>
+                  <Value>=First(Fields!Inst_Name.Value, "dsBQCT1RS28Details")</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value> (</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>=First(Fields!Inst_ControlIDCombined.Value, "dsBQCT1RS28Details")</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>) / Standard resistances</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
               </TextRuns>
               <Style>
                 <TextAlign>Left</TextAlign>
@@ -1656,7 +1823,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox28</rd:DefaultName>
-          <Top>5.43079cm</Top>
+          <Top>5.74829cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.58222cm</Height>
           <Width>13.8478cm</Width>
@@ -1692,7 +1859,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>2.42037cm</Top>
+          <Top>2.73787cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.58396cm</Height>
           <Width>3.72318cm</Width>
@@ -1727,7 +1894,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.99551cm</Top>
+          <Top>3.31301cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.6cm</Height>
           <Width>3.72318cm</Width>
@@ -1762,7 +1929,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>3.59551cm</Top>
+          <Top>3.91301cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.6cm</Height>
           <Width>3.72318cm</Width>
@@ -1797,7 +1964,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox17</rd:DefaultName>
-          <Top>4.19551cm</Top>
+          <Top>4.51301cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.6cm</Height>
           <Width>3.72318cm</Width>
@@ -1832,7 +1999,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox18</rd:DefaultName>
-          <Top>4.79551cm</Top>
+          <Top>5.11301cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.63528cm</Height>
           <Width>3.72318cm</Width>
@@ -1854,7 +2021,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_LHRangeCombined.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1864,7 +2031,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox21</rd:DefaultName>
-          <Top>4.79551cm</Top>
+          <Top>5.11301cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.63528cm</Height>
           <Width>4.80286cm</Width>
@@ -1887,7 +2054,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Machine_Name.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1897,7 +2064,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
-          <Top>4.19551cm</Top>
+          <Top>4.51301cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.6cm</Height>
           <Width>4.80286cm</Width>
@@ -1920,7 +2087,15 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_Make.Value, "dsBQCT1RS28Details")</Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value> / </Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>=First(Fields!Device_Model.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1930,7 +2105,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox19</rd:DefaultName>
-          <Top>3.59551cm</Top>
+          <Top>3.91301cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.6cm</Height>
           <Width>4.80286cm</Width>
@@ -1953,7 +2128,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_ControlID.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1963,7 +2138,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>2.99551cm</Top>
+          <Top>3.31301cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.6cm</Height>
           <Width>4.80286cm</Width>
@@ -1986,7 +2161,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_Name.Value, "dsBQCT1RS28Details")</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
@@ -1998,7 +2173,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
-          <Top>2.42037cm</Top>
+          <Top>2.73787cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.58397cm</Height>
           <Width>4.80286cm</Width>
@@ -2034,7 +2209,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>2.42037cm</Top>
+          <Top>2.73787cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.59279cm</Height>
           <Width>4.42556cm</Width>
@@ -2069,7 +2244,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>3.01315cm</Top>
+          <Top>3.33065cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.58236cm</Height>
           <Width>4.42556cm</Width>
@@ -2104,7 +2279,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox22</rd:DefaultName>
-          <Top>3.59551cm</Top>
+          <Top>3.91301cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.60868cm</Height>
           <Width>4.42556cm</Width>
@@ -2139,7 +2314,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox23</rd:DefaultName>
-          <Top>4.19551cm</Top>
+          <Top>4.51301cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.61764cm</Height>
           <Width>4.42556cm</Width>
@@ -2174,7 +2349,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
-          <Top>4.81315cm</Top>
+          <Top>5.13065cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.6cm</Height>
           <Width>4.42556cm</Width>
@@ -2209,7 +2384,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox29</rd:DefaultName>
-          <Top>5.41315cm</Top>
+          <Top>5.73065cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.6cm</Height>
           <Width>4.42556cm</Width>
@@ -2231,7 +2406,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_LCCombined.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2241,7 +2416,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>2.42037cm</Top>
+          <Top>2.73787cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.57515cm</Height>
           <Width>4.21777cm</Width>
@@ -2264,7 +2439,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_AccuracyCombined.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2274,7 +2449,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>2.99551cm</Top>
+          <Top>3.31301cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21777cm</Width>
@@ -2297,7 +2472,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!TempHumidityCombined.Value, "dsTempHumidity")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2307,7 +2482,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
-          <Top>3.59551cm</Top>
+          <Top>3.91301cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21777cm</Width>
@@ -2330,7 +2505,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_JudgementCombined.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2340,7 +2515,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox26</rd:DefaultName>
-          <Top>4.19551cm</Top>
+          <Top>4.51301cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21777cm</Width>
@@ -2375,7 +2550,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox27</rd:DefaultName>
-          <Top>4.79551cm</Top>
+          <Top>5.11301cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21776cm</Width>
@@ -2398,7 +2573,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>=First(Fields!Device_OPRangeCombined.Value, "dsBQCT1RS28Details")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2408,7 +2583,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox30</rd:DefaultName>
-          <Top>5.39551cm</Top>
+          <Top>5.71301cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.61764cm</Height>
           <Width>4.21777cm</Width>
@@ -2432,7 +2607,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.51883cm</Height>
+      <Height>2.56116cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -2445,6 +2620,7 @@
                 <TextRun>
                   <Value>REMARKS :- </Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2476,6 +2652,7 @@
                 <TextRun>
                   <Value>JUDGEMENT BY INSPECTOR</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2488,7 +2665,7 @@
           <rd:DefaultName>Textbox255</rd:DefaultName>
           <Top>0.14117cm</Top>
           <Left>11.71812cm</Left>
-          <Height>0.5752cm</Height>
+          <Height>0.46937cm</Height>
           <Width>6.88023cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -2510,6 +2687,7 @@
                 <TextRun>
                   <Value>BEFORE ADJUST.</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2520,9 +2698,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox256</rd:DefaultName>
-          <Top>0.71637cm</Top>
+          <Top>0.61054cm</Top>
           <Left>11.71812cm</Left>
-          <Height>0.66586cm</Height>
+          <Height>0.45419cm</Height>
           <Width>3.6363cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
@@ -2532,40 +2710,6 @@
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox258">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>PASS</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox258</rd:DefaultName>
-          <Top>1.38223cm</Top>
-          <Left>11.71812cm</Left>
-          <Height>1.05894cm</Height>
-          <Width>3.6363cm</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>8pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
@@ -2584,11 +2728,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox259</rd:DefaultName>
-          <Top>1.38223cm</Top>
+          <Top>1.06473cm</Top>
           <Left>15.35442cm</Left>
-          <Height>1.05894cm</Height>
+          <Height>1.37644cm</Height>
           <Width>3.24393cm</Width>
-          <ZIndex>4</ZIndex>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2608,6 +2752,7 @@
                 <TextRun>
                   <Value>AFTER ADJUST.</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2618,11 +2763,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox257</rd:DefaultName>
-          <Top>0.71637cm</Top>
+          <Top>0.61054cm</Top>
           <Left>15.35442cm</Left>
-          <Height>0.66586cm</Height>
+          <Height>0.45419cm</Height>
           <Width>3.24393cm</Width>
-          <ZIndex>5</ZIndex>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2642,6 +2787,7 @@
                 <TextRun>
                   <Value>INSPECTOR</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2654,9 +2800,9 @@
           <rd:DefaultName>Textbox261</rd:DefaultName>
           <Top>0.14117cm</Top>
           <Left>18.59835cm</Left>
-          <Height>1.24106cm</Height>
+          <Height>0.92356cm</Height>
           <Width>3.10184cm</Width>
-          <ZIndex>6</ZIndex>
+          <ZIndex>5</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2683,11 +2829,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox264</rd:DefaultName>
-          <Top>1.38223cm</Top>
+          <Top>1.06473cm</Top>
           <Left>18.59835cm</Left>
-          <Height>1.05894cm</Height>
+          <Height>1.37644cm</Height>
           <Width>3.10184cm</Width>
-          <ZIndex>7</ZIndex>
+          <ZIndex>6</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2713,11 +2859,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox264</rd:DefaultName>
-          <Top>1.38223cm</Top>
+          <Top>1.06473cm</Top>
           <Left>21.70019cm</Left>
-          <Height>1.05894cm</Height>
+          <Height>1.37644cm</Height>
           <Width>3.224cm</Width>
-          <ZIndex>8</ZIndex>
+          <ZIndex>7</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2735,21 +2881,9 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>APPROVED</Value>
+                  <Value>APPROVED BY</Value>
                   <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>BY</Value>
-                  <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2762,8 +2896,44 @@
           <rd:DefaultName>Textbox261</rd:DefaultName>
           <Top>0.14117cm</Top>
           <Left>21.70019cm</Left>
-          <Height>1.24106cm</Height>
+          <Height>0.92356cm</Height>
           <Width>3.224cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox47">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>PASS</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox47</rd:DefaultName>
+          <Top>1.06473cm</Top>
+          <Left>11.71812cm</Left>
+          <Height>1.37644cm</Height>
+          <Width>3.6363cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
             <Border>
@@ -2793,6 +2963,153 @@
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="BridgestoneCalDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>ececb481-45cc-4ef1-97f8-9fb2fd73e8cb</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsBQCT1RS28Readings">
+      <Query>
+        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BQCTRS28_Resistances">
+          <DataField>BQCTRS28_Resistances</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_MasterDisplay">
+          <DataField>BQCTRS28_MasterDisplay</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_BeforeActual">
+          <DataField>BQCTRS28_BeforeActual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_BeforeDifference">
+          <DataField>BQCTRS28_BeforeDifference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_BeforeError">
+          <DataField>BQCTRS28_BeforeError</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_AfterActual">
+          <DataField>BQCTRS28_AfterActual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_AfterDifference">
+          <DataField>BQCTRS28_AfterDifference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BQCTRS28_AfterError">
+          <DataField>BQCTRS28_AfterError</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>dtBQCT1RS28Readings</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>dtBQCT1RS28ReadingsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsBQCT1RS28Details">
+      <Query>
+        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Machine_Name">
+          <DataField>Machine_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cycle_Name">
+          <DataField>Cycle_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_Name">
+          <DataField>Device_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_ControlID">
+          <DataField>Device_ControlID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_Make">
+          <DataField>Device_Make</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_Model">
+          <DataField>Device_Model</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_LHRangeCombined">
+          <DataField>Device_LHRangeCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_LCCombined">
+          <DataField>Device_LCCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_AccuracyCombined">
+          <DataField>Device_AccuracyCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_OPRangeCombined">
+          <DataField>Device_OPRangeCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Inst_Name">
+          <DataField>Inst_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Inst_ControlIDCombined">
+          <DataField>Inst_ControlIDCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_JudgementCombined">
+          <DataField>Device_JudgementCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>dtDeviceDetails</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>dtDeviceDetailsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsTempHumidity">
+      <Query>
+        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TempHumidityCombined">
+          <DataField>TempHumidityCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>dtTempHumidity</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>dtTempHumidityTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <EmbeddedImages>
     <EmbeddedImage Name="bridgestonelogo1">
       <MIMEType>image/png</MIMEType>

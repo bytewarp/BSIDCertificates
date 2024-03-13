@@ -56,6 +56,8 @@ namespace BSIDCertificates {
         
         private dtBQCT1XM01ReadingsDataTable tabledtBQCT1XM01Readings;
         
+        private dtBQCT1RS28ReadingsDataTable tabledtBQCT1RS28Readings;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -131,6 +133,9 @@ namespace BSIDCertificates {
                 }
                 if ((ds.Tables["dtBQCT1XM01Readings"] != null)) {
                     base.Tables.Add(new dtBQCT1XM01ReadingsDataTable(ds.Tables["dtBQCT1XM01Readings"]));
+                }
+                if ((ds.Tables["dtBQCT1RS28Readings"] != null)) {
+                    base.Tables.Add(new dtBQCT1RS28ReadingsDataTable(ds.Tables["dtBQCT1RS28Readings"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -312,6 +317,16 @@ namespace BSIDCertificates {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public dtBQCT1RS28ReadingsDataTable dtBQCT1RS28Readings {
+            get {
+                return this.tabledtBQCT1RS28Readings;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -424,6 +439,9 @@ namespace BSIDCertificates {
                 }
                 if ((ds.Tables["dtBQCT1XM01Readings"] != null)) {
                     base.Tables.Add(new dtBQCT1XM01ReadingsDataTable(ds.Tables["dtBQCT1XM01Readings"]));
+                }
+                if ((ds.Tables["dtBQCT1RS28Readings"] != null)) {
+                    base.Tables.Add(new dtBQCT1RS28ReadingsDataTable(ds.Tables["dtBQCT1RS28Readings"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -554,6 +572,12 @@ namespace BSIDCertificates {
                     this.tabledtBQCT1XM01Readings.InitVars();
                 }
             }
+            this.tabledtBQCT1RS28Readings = ((dtBQCT1RS28ReadingsDataTable)(base.Tables["dtBQCT1RS28Readings"]));
+            if ((initTable == true)) {
+                if ((this.tabledtBQCT1RS28Readings != null)) {
+                    this.tabledtBQCT1RS28Readings.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -596,6 +620,8 @@ namespace BSIDCertificates {
             base.Tables.Add(this.tabledtBQCT1AS30Readings);
             this.tabledtBQCT1XM01Readings = new dtBQCT1XM01ReadingsDataTable();
             base.Tables.Add(this.tabledtBQCT1XM01Readings);
+            this.tabledtBQCT1RS28Readings = new dtBQCT1RS28ReadingsDataTable();
+            base.Tables.Add(this.tabledtBQCT1RS28Readings);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -691,6 +717,12 @@ namespace BSIDCertificates {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializedtBQCT1XM01Readings() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializedtBQCT1RS28Readings() {
             return false;
         }
         
@@ -796,6 +828,9 @@ namespace BSIDCertificates {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void dtBQCT1XM01ReadingsRowChangeEventHandler(object sender, dtBQCT1XM01ReadingsRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void dtBQCT1RS28ReadingsRowChangeEventHandler(object sender, dtBQCT1RS28ReadingsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -5741,6 +5776,359 @@ namespace BSIDCertificates {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class dtBQCT1RS28ReadingsDataTable : global::System.Data.TypedTableBase<dtBQCT1RS28ReadingsRow> {
+            
+            private global::System.Data.DataColumn columnBQCTRS28_Resistances;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_MasterDisplay;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_BeforeActual;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_BeforeDifference;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_BeforeError;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_AfterActual;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_AfterDifference;
+            
+            private global::System.Data.DataColumn columnBQCTRS28_AfterError;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBQCT1RS28ReadingsDataTable() {
+                this.TableName = "dtBQCT1RS28Readings";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal dtBQCT1RS28ReadingsDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected dtBQCT1RS28ReadingsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_ResistancesColumn {
+                get {
+                    return this.columnBQCTRS28_Resistances;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_MasterDisplayColumn {
+                get {
+                    return this.columnBQCTRS28_MasterDisplay;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_BeforeActualColumn {
+                get {
+                    return this.columnBQCTRS28_BeforeActual;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_BeforeDifferenceColumn {
+                get {
+                    return this.columnBQCTRS28_BeforeDifference;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_BeforeErrorColumn {
+                get {
+                    return this.columnBQCTRS28_BeforeError;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_AfterActualColumn {
+                get {
+                    return this.columnBQCTRS28_AfterActual;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_AfterDifferenceColumn {
+                get {
+                    return this.columnBQCTRS28_AfterDifference;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BQCTRS28_AfterErrorColumn {
+                get {
+                    return this.columnBQCTRS28_AfterError;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBQCT1RS28ReadingsRow this[int index] {
+                get {
+                    return ((dtBQCT1RS28ReadingsRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBQCT1RS28ReadingsRowChangeEventHandler dtBQCT1RS28ReadingsRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBQCT1RS28ReadingsRowChangeEventHandler dtBQCT1RS28ReadingsRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBQCT1RS28ReadingsRowChangeEventHandler dtBQCT1RS28ReadingsRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBQCT1RS28ReadingsRowChangeEventHandler dtBQCT1RS28ReadingsRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AdddtBQCT1RS28ReadingsRow(dtBQCT1RS28ReadingsRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBQCT1RS28ReadingsRow AdddtBQCT1RS28ReadingsRow(string BQCTRS28_Resistances, string BQCTRS28_MasterDisplay, string BQCTRS28_BeforeActual, string BQCTRS28_BeforeDifference, string BQCTRS28_BeforeError, string BQCTRS28_AfterActual, string BQCTRS28_AfterDifference, string BQCTRS28_AfterError) {
+                dtBQCT1RS28ReadingsRow rowdtBQCT1RS28ReadingsRow = ((dtBQCT1RS28ReadingsRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        BQCTRS28_Resistances,
+                        BQCTRS28_MasterDisplay,
+                        BQCTRS28_BeforeActual,
+                        BQCTRS28_BeforeDifference,
+                        BQCTRS28_BeforeError,
+                        BQCTRS28_AfterActual,
+                        BQCTRS28_AfterDifference,
+                        BQCTRS28_AfterError};
+                rowdtBQCT1RS28ReadingsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowdtBQCT1RS28ReadingsRow);
+                return rowdtBQCT1RS28ReadingsRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                dtBQCT1RS28ReadingsDataTable cln = ((dtBQCT1RS28ReadingsDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new dtBQCT1RS28ReadingsDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnBQCTRS28_Resistances = base.Columns["BQCTRS28_Resistances"];
+                this.columnBQCTRS28_MasterDisplay = base.Columns["BQCTRS28_MasterDisplay"];
+                this.columnBQCTRS28_BeforeActual = base.Columns["BQCTRS28_BeforeActual"];
+                this.columnBQCTRS28_BeforeDifference = base.Columns["BQCTRS28_BeforeDifference"];
+                this.columnBQCTRS28_BeforeError = base.Columns["BQCTRS28_BeforeError"];
+                this.columnBQCTRS28_AfterActual = base.Columns["BQCTRS28_AfterActual"];
+                this.columnBQCTRS28_AfterDifference = base.Columns["BQCTRS28_AfterDifference"];
+                this.columnBQCTRS28_AfterError = base.Columns["BQCTRS28_AfterError"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnBQCTRS28_Resistances = new global::System.Data.DataColumn("BQCTRS28_Resistances", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_Resistances);
+                this.columnBQCTRS28_MasterDisplay = new global::System.Data.DataColumn("BQCTRS28_MasterDisplay", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_MasterDisplay);
+                this.columnBQCTRS28_BeforeActual = new global::System.Data.DataColumn("BQCTRS28_BeforeActual", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_BeforeActual);
+                this.columnBQCTRS28_BeforeDifference = new global::System.Data.DataColumn("BQCTRS28_BeforeDifference", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_BeforeDifference);
+                this.columnBQCTRS28_BeforeError = new global::System.Data.DataColumn("BQCTRS28_BeforeError", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_BeforeError);
+                this.columnBQCTRS28_AfterActual = new global::System.Data.DataColumn("BQCTRS28_AfterActual", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_AfterActual);
+                this.columnBQCTRS28_AfterDifference = new global::System.Data.DataColumn("BQCTRS28_AfterDifference", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_AfterDifference);
+                this.columnBQCTRS28_AfterError = new global::System.Data.DataColumn("BQCTRS28_AfterError", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBQCTRS28_AfterError);
+                this.columnBQCTRS28_Resistances.MaxLength = 50;
+                this.columnBQCTRS28_MasterDisplay.MaxLength = 50;
+                this.columnBQCTRS28_BeforeActual.MaxLength = 50;
+                this.columnBQCTRS28_BeforeDifference.MaxLength = 50;
+                this.columnBQCTRS28_BeforeError.MaxLength = 50;
+                this.columnBQCTRS28_AfterActual.MaxLength = 50;
+                this.columnBQCTRS28_AfterDifference.MaxLength = 50;
+                this.columnBQCTRS28_AfterError.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBQCT1RS28ReadingsRow NewdtBQCT1RS28ReadingsRow() {
+                return ((dtBQCT1RS28ReadingsRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new dtBQCT1RS28ReadingsRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(dtBQCT1RS28ReadingsRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.dtBQCT1RS28ReadingsRowChanged != null)) {
+                    this.dtBQCT1RS28ReadingsRowChanged(this, new dtBQCT1RS28ReadingsRowChangeEvent(((dtBQCT1RS28ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.dtBQCT1RS28ReadingsRowChanging != null)) {
+                    this.dtBQCT1RS28ReadingsRowChanging(this, new dtBQCT1RS28ReadingsRowChangeEvent(((dtBQCT1RS28ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.dtBQCT1RS28ReadingsRowDeleted != null)) {
+                    this.dtBQCT1RS28ReadingsRowDeleted(this, new dtBQCT1RS28ReadingsRowChangeEvent(((dtBQCT1RS28ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.dtBQCT1RS28ReadingsRowDeleting != null)) {
+                    this.dtBQCT1RS28ReadingsRowDeleting(this, new dtBQCT1RS28ReadingsRowChangeEvent(((dtBQCT1RS28ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemovedtBQCT1RS28ReadingsRow(dtBQCT1RS28ReadingsRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                BridgestoneCalDataSet ds = new BridgestoneCalDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "dtBQCT1RS28ReadingsDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class dtBB8PGReadingsRow : global::System.Data.DataRow {
@@ -8111,6 +8499,253 @@ namespace BSIDCertificates {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class dtBQCT1RS28ReadingsRow : global::System.Data.DataRow {
+            
+            private dtBQCT1RS28ReadingsDataTable tabledtBQCT1RS28Readings;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal dtBQCT1RS28ReadingsRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabledtBQCT1RS28Readings = ((dtBQCT1RS28ReadingsDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_Resistances {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_ResistancesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_Resistances\' in table \'dtBQCT1RS28Readings\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_ResistancesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_MasterDisplay {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_MasterDisplayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_MasterDisplay\' in table \'dtBQCT1RS28Readings\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_MasterDisplayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_BeforeActual {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeActualColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_BeforeActual\' in table \'dtBQCT1RS28Readings\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeActualColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_BeforeDifference {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeDifferenceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_BeforeDifference\' in table \'dtBQCT1RS28Readings\' i" +
+                                "s DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeDifferenceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_BeforeError {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_BeforeError\' in table \'dtBQCT1RS28Readings\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_AfterActual {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterActualColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_AfterActual\' in table \'dtBQCT1RS28Readings\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterActualColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_AfterDifference {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterDifferenceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_AfterDifference\' in table \'dtBQCT1RS28Readings\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterDifferenceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BQCTRS28_AfterError {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BQCTRS28_AfterError\' in table \'dtBQCT1RS28Readings\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_ResistancesNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_ResistancesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_ResistancesNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_ResistancesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_MasterDisplayNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_MasterDisplayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_MasterDisplayNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_MasterDisplayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_BeforeActualNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeActualColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_BeforeActualNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeActualColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_BeforeDifferenceNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeDifferenceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_BeforeDifferenceNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeDifferenceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_BeforeErrorNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_BeforeErrorNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_BeforeErrorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_AfterActualNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_AfterActualColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_AfterActualNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterActualColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_AfterDifferenceNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_AfterDifferenceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_AfterDifferenceNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterDifferenceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBQCTRS28_AfterErrorNull() {
+                return this.IsNull(this.tabledtBQCT1RS28Readings.BQCTRS28_AfterErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBQCTRS28_AfterErrorNull() {
+                this[this.tabledtBQCT1RS28Readings.BQCTRS28_AfterErrorColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -8640,6 +9275,40 @@ namespace BSIDCertificates {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public dtBQCT1XM01ReadingsRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class dtBQCT1RS28ReadingsRowChangeEvent : global::System.EventArgs {
+            
+            private dtBQCT1RS28ReadingsRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBQCT1RS28ReadingsRowChangeEvent(dtBQCT1RS28ReadingsRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBQCT1RS28ReadingsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -12617,6 +13286,292 @@ from tblBB8TRReadingsMaster";
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class dtBQCT1RS28ReadingsTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public dtBQCT1RS28ReadingsTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "dtBQCT1RS28Readings";
+            tableMapping.ColumnMappings.Add("BQCTRS28_Resistances", "BQCTRS28_Resistances");
+            tableMapping.ColumnMappings.Add("BQCTRS28_MasterDisplay", "BQCTRS28_MasterDisplay");
+            tableMapping.ColumnMappings.Add("BQCTRS28_BeforeActual", "BQCTRS28_BeforeActual");
+            tableMapping.ColumnMappings.Add("BQCTRS28_BeforeDifference", "BQCTRS28_BeforeDifference");
+            tableMapping.ColumnMappings.Add("BQCTRS28_BeforeError", "BQCTRS28_BeforeError");
+            tableMapping.ColumnMappings.Add("BQCTRS28_AfterActual", "BQCTRS28_AfterActual");
+            tableMapping.ColumnMappings.Add("BQCTRS28_AfterDifference", "BQCTRS28_AfterDifference");
+            tableMapping.ColumnMappings.Add("BQCTRS28_AfterError", "BQCTRS28_AfterError");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [tblBQCTRS28ReadingsMaster] ([BQCTRS28_Resistances], [BQCTRS28_MasterDisplay], [BQCTRS28_BeforeActual], [BQCTRS28_BeforeDifference], [BQCTRS28_BeforeError], [BQCTRS28_AfterActual], [BQCTRS28_AfterDifference], [BQCTRS28_AfterError]) VALUES (@BQCTRS28_Resistances, @BQCTRS28_MasterDisplay, @BQCTRS28_BeforeActual, @BQCTRS28_BeforeDifference, @BQCTRS28_BeforeError, @BQCTRS28_AfterActual, @BQCTRS28_AfterDifference, @BQCTRS28_AfterError)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_Resistances", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_Resistances", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_MasterDisplay", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_MasterDisplay", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_BeforeActual", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_BeforeActual", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_BeforeDifference", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_BeforeDifference", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_BeforeError", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_BeforeError", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_AfterActual", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_AfterActual", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_AfterDifference", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_AfterDifference", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BQCTRS28_AfterError", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BQCTRS28_AfterError", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::BSIDCertificates.Properties.Settings.Default.BridgestoneCalConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "select BQCTRS28_Resistances, BQCTRS28_MasterDisplay, \r\nBQCTRS28_BeforeActual, BQC" +
+                "TRS28_BeforeDifference, BQCTRS28_BeforeError,\r\nBQCTRS28_AfterActual, BQCTRS28_Af" +
+                "terDifference, BQCTRS28_AfterError\r\nfrom tblBQCTRS28ReadingsMaster";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(BridgestoneCalDataSet.dtBQCT1RS28ReadingsDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual BridgestoneCalDataSet.dtBQCT1RS28ReadingsDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            BridgestoneCalDataSet.dtBQCT1RS28ReadingsDataTable dataTable = new BridgestoneCalDataSet.dtBQCT1RS28ReadingsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(BridgestoneCalDataSet.dtBQCT1RS28ReadingsDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(BridgestoneCalDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "dtBQCT1RS28Readings");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string BQCTRS28_Resistances, string BQCTRS28_MasterDisplay, string BQCTRS28_BeforeActual, string BQCTRS28_BeforeDifference, string BQCTRS28_BeforeError, string BQCTRS28_AfterActual, string BQCTRS28_AfterDifference, string BQCTRS28_AfterError) {
+            if ((BQCTRS28_Resistances == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(BQCTRS28_Resistances));
+            }
+            if ((BQCTRS28_MasterDisplay == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(BQCTRS28_MasterDisplay));
+            }
+            if ((BQCTRS28_BeforeActual == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(BQCTRS28_BeforeActual));
+            }
+            if ((BQCTRS28_BeforeDifference == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(BQCTRS28_BeforeDifference));
+            }
+            if ((BQCTRS28_BeforeError == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(BQCTRS28_BeforeError));
+            }
+            if ((BQCTRS28_AfterActual == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(BQCTRS28_AfterActual));
+            }
+            if ((BQCTRS28_AfterDifference == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(BQCTRS28_AfterDifference));
+            }
+            if ((BQCTRS28_AfterError == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(BQCTRS28_AfterError));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12655,6 +13610,8 @@ from tblBB8TRReadingsMaster";
         private dtBQCT1AS30ReadingsTableAdapter _dtBQCT1AS30ReadingsTableAdapter;
         
         private dtBQCT1XM01ReadingsTableAdapter _dtBQCT1XM01ReadingsTableAdapter;
+        
+        private dtBQCT1RS28ReadingsTableAdapter _dtBQCT1RS28ReadingsTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -12869,6 +13826,20 @@ from tblBB8TRReadingsMaster";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public dtBQCT1RS28ReadingsTableAdapter dtBQCT1RS28ReadingsTableAdapter {
+            get {
+                return this._dtBQCT1RS28ReadingsTableAdapter;
+            }
+            set {
+                this._dtBQCT1RS28ReadingsTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -12942,6 +13913,10 @@ from tblBB8TRReadingsMaster";
                             && (this._dtBQCT1XM01ReadingsTableAdapter.Connection != null))) {
                     return this._dtBQCT1XM01ReadingsTableAdapter.Connection;
                 }
+                if (((this._dtBQCT1RS28ReadingsTableAdapter != null) 
+                            && (this._dtBQCT1RS28ReadingsTableAdapter.Connection != null))) {
+                    return this._dtBQCT1RS28ReadingsTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -12997,6 +13972,9 @@ from tblBB8TRReadingsMaster";
                 if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -13017,93 +13995,12 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dtBB8XMReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8XMReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dtBQCT1AS30ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1AS30Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBB8XMReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBB8WSReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8WSReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBB8WSReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBB8TFReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8TFReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBB8TFReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBB8TRReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8TRReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBB8TRReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1DS24ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS24Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1DS24ReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1DS25ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS25Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1DS25ReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1PH26ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1PH26Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1PH26ReadingsTableAdapter.Update(updatedRows));
+                    result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -13116,12 +14013,39 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dtBQCT1AS30ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1AS30Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dtBQCT1PH26ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1PH26Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(updatedRows));
+                    result = (result + this._dtBQCT1PH26ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1DS25ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS25Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1DS25ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1DS24ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS24Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1DS24ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -13131,6 +14055,69 @@ from tblBB8TRReadingsMaster";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBB8TRReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8TRReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBB8TRReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBB8TFReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8TFReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBB8TFReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBB8WSReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8WSReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBB8WSReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBB8XMReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBB8XMReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBB8XMReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -13152,83 +14139,11 @@ from tblBB8TRReadingsMaster";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dtBB8XMReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBB8XMReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dtBQCT1AS30ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1AS30Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dtBB8XMReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBB8WSReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBB8WSReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBB8WSReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBB8TFReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBB8TFReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBB8TFReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBB8TRReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBB8TRReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBB8TRReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1DS24ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS24Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1DS24ReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1DS25ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS25Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1DS25ReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1PH26ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1PH26Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1PH26ReadingsTableAdapter.Update(addedRows));
+                    result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -13240,11 +14155,35 @@ from tblBB8TRReadingsMaster";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dtBQCT1AS30ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1AS30Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dtBQCT1PH26ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1PH26Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(addedRows));
+                    result = (result + this._dtBQCT1PH26ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1DS25ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS25Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1DS25ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1DS24ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS24Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1DS24ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -13253,6 +14192,62 @@ from tblBB8TRReadingsMaster";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBB8TRReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBB8TRReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBB8TRReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBB8TFReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBB8TFReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBB8TFReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBB8WSReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBB8WSReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBB8WSReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBB8XMReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBB8XMReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBB8XMReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -13266,67 +14261,11 @@ from tblBB8TRReadingsMaster";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(BridgestoneCalDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1AS30ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1AS30Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1WS29ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1WS29Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1WS29ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1PH26ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1PH26Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1PH26ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1DS25ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS25Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1DS25ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1DS24ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS24Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1DS24ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(deletedRows));
+                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -13338,19 +14277,11 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dtBB8TRReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBB8TRReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dtBB8XMReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBB8XMReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBB8TRReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBB8TFReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBB8TFReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBB8TFReadingsTableAdapter.Update(deletedRows));
+                    result = (result + this._dtBB8XMReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -13362,11 +14293,83 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dtBB8XMReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBB8XMReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dtBB8TFReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBB8TFReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBB8XMReadingsTableAdapter.Update(deletedRows));
+                    result = (result + this._dtBB8TFReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBB8TRReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBB8TRReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBB8TRReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1DS24ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS24Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1DS24ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1DS25ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS25Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1DS25ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1PH26ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1PH26Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1PH26ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1WS29ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1WS29Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1WS29ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1AS30ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1AS30Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -13484,6 +14487,11 @@ from tblBB8TRReadingsMaster";
             }
             if (((this._dtBQCT1XM01ReadingsTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._dtBQCT1XM01ReadingsTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._dtBQCT1RS28ReadingsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._dtBQCT1RS28ReadingsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -13645,6 +14653,15 @@ from tblBB8TRReadingsMaster";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._dtBQCT1XM01ReadingsTableAdapter.Adapter);
                     }
                 }
+                if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                    revertConnections.Add(this._dtBQCT1RS28ReadingsTableAdapter, this._dtBQCT1RS28ReadingsTableAdapter.Connection);
+                    this._dtBQCT1RS28ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._dtBQCT1RS28ReadingsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._dtBQCT1RS28ReadingsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._dtBQCT1RS28ReadingsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._dtBQCT1RS28ReadingsTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -13758,6 +14775,10 @@ from tblBB8TRReadingsMaster";
                 if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
                     this._dtBQCT1XM01ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dtBQCT1XM01ReadingsTableAdapter]));
                     this._dtBQCT1XM01ReadingsTableAdapter.Transaction = null;
+                }
+                if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                    this._dtBQCT1RS28ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dtBQCT1RS28ReadingsTableAdapter]));
+                    this._dtBQCT1RS28ReadingsTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

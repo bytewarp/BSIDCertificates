@@ -318,7 +318,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsBQCT1PH26Readings</DataSetName>
-        <Top>0.17639cm</Top>
+        <Top>1.76389cm</Top>
         <Left>7.35563cm</Left>
         <Height>1.8cm</Height>
         <Width>9.07243cm</Width>
@@ -329,13 +329,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.97639cm</Height>
+    <Height>5.02439cm</Height>
     <Style />
   </Body>
   <Width>25cm</Width>
   <Page>
     <PageHeader>
-      <Height>6.0325cm</Height>
+      <Height>6.4135cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -348,12 +348,13 @@
                 <TextRun>
                   <Value>CALIBRATION RECORD</Value>
                   <Style>
+                    <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Center</TextAlign>
+                <TextAlign>Left</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
@@ -382,7 +383,7 @@
                 <TextRun>
                   <Value>MACHINE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -396,7 +397,7 @@
                 <TextRun>
                   <Value>NAME</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -432,7 +433,7 @@
                 <TextRun>
                   <Value>INSPECTION</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -446,7 +447,7 @@
                 <TextRun>
                   <Value>CYCLE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -482,7 +483,7 @@
                 <TextRun>
                   <Value>PREPARED BY</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -496,7 +497,7 @@
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -532,7 +533,7 @@
                 <TextRun>
                   <Value>APPROVED BY</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -546,7 +547,7 @@
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -582,7 +583,7 @@
                 <TextRun>
                   <Value>REVISION NO.</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -596,7 +597,7 @@
                 <TextRun>
                   <Value>DATE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -610,7 +611,7 @@
           <Top>0.45355cm</Top>
           <Left>16.94429cm</Left>
           <Height>0.85399cm</Height>
-          <Width>2.69767cm</Width>
+          <Width>2.14734cm</Width>
           <ZIndex>5</ZIndex>
           <Style>
             <Border>
@@ -632,7 +633,7 @@
                 <TextRun>
                   <Value>REFERENCE</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -644,9 +645,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>0.45355cm</Top>
-          <Left>19.64196cm</Left>
+          <Left>19.09163cm</Left>
           <Height>0.85399cm</Height>
-          <Width>2.31667cm</Width>
+          <Width>2.867cm</Width>
           <ZIndex>6</ZIndex>
           <Style>
             <Border>
@@ -668,7 +669,7 @@
                 <TextRun>
                   <Value>FORMAT NO.</Value>
                   <Style>
-                    <FontSize>9pt</FontSize>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -727,13 +728,14 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>0.07138cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.01615cm</Height>
           <Width>5.35287cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -748,7 +750,10 @@
               <TextRuns>
                 <TextRun>
                   <Value>=First(Fields!Machine_Name.Value, "dsBQCT1PH26Details")</Value>
-                  <Style />
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -759,7 +764,7 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>5.42425cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.01615cm</Height>
           <Width>2.24169cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
@@ -781,7 +786,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>=First(Fields!Cycle_Name.Value, "dsBQCT1PH26Details")</Value>
-                  <Style />
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -792,7 +799,7 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>7.66595cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.01615cm</Height>
           <Width>2.18967cm</Width>
           <ZIndex>10</ZIndex>
           <Style>
@@ -813,23 +820,43 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>B.H.NAYAK (SM MTE)</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>20/04/2012</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>9.85563cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.01615cm</Height>
           <Width>3.45968cm</Width>
           <ZIndex>11</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -843,23 +870,43 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>ADITYA SHUKLA</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>(Sr.DGM PED) 20/04/2012</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>13.31531cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.01615cm</Height>
           <Width>3.62899cm</Width>
           <ZIndex>12</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -873,23 +920,29 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>1/5-Dec-2013</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>16.94429cm</Left>
-          <Height>0.78332cm</Height>
-          <Width>2.69767cm</Width>
+          <Height>1.01615cm</Height>
+          <Width>2.14734cm</Width>
           <ZIndex>13</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -917,9 +970,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
-          <Left>19.64196cm</Left>
-          <Height>0.78332cm</Height>
-          <Width>2.31667cm</Width>
+          <Left>19.09163cm</Left>
+          <Height>1.01615cm</Height>
+          <Width>2.867cm</Width>
           <ZIndex>14</ZIndex>
           <Style>
             <Border>
@@ -954,7 +1007,7 @@
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>1.30754cm</Top>
           <Left>21.95862cm</Left>
-          <Height>0.78332cm</Height>
+          <Height>1.01615cm</Height>
           <Width>2.97cm</Width>
           <ZIndex>15</ZIndex>
           <Style>
@@ -1002,7 +1055,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>2.34629cm</Top>
+          <Top>2.66379cm</Top>
           <Left>0.08026cm</Left>
           <Height>1.18382cm</Height>
           <Width>5.32176cm</Width>
@@ -1038,7 +1091,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox10</rd:DefaultName>
-          <Top>3.53011cm</Top>
+          <Top>3.84761cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.6cm</Height>
           <Width>3.28757cm</Width>
@@ -1069,7 +1122,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
-          <Top>3.53011cm</Top>
+          <Top>3.84761cm</Top>
           <Left>3.36783cm</Left>
           <Height>0.6cm</Height>
           <Width>2.03418cm</Width>
@@ -1101,7 +1154,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>4.13011cm</Top>
+          <Top>4.44761cm</Top>
           <Left>3.36783cm</Left>
           <Height>0.6cm</Height>
           <Width>2.03418cm</Width>
@@ -1132,7 +1185,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox15</rd:DefaultName>
-          <Top>4.73011cm</Top>
+          <Top>5.04761cm</Top>
           <Left>3.36783cm</Left>
           <Height>0.6266cm</Height>
           <Width>2.03418cm</Width>
@@ -1167,7 +1220,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>4.73011cm</Top>
+          <Top>5.04761cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.6266cm</Height>
           <Width>3.28757cm</Width>
@@ -1203,7 +1256,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
-          <Top>4.13011cm</Top>
+          <Top>4.44761cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.6cm</Height>
           <Width>3.28757cm</Width>
@@ -1238,13 +1291,19 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value xml:space="preserve"> </Value>
+                  <Value> (</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
                 <TextRun>
                   <Value>=First(Fields!Inst_ControlIDCombined.Value, "dsBQCT1PH26Details")</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>)</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -1256,7 +1315,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox28</rd:DefaultName>
-          <Top>5.35671cm</Top>
+          <Top>5.67421cm</Top>
           <Left>0.08026cm</Left>
           <Height>0.58222cm</Height>
           <Width>13.8478cm</Width>
@@ -1292,7 +1351,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>2.34629cm</Top>
+          <Top>2.66379cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.58396cm</Height>
           <Width>3.72318cm</Width>
@@ -1327,7 +1386,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.92143cm</Top>
+          <Top>3.23893cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.6cm</Height>
           <Width>3.72318cm</Width>
@@ -1362,7 +1421,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>3.52143cm</Top>
+          <Top>3.83893cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.6cm</Height>
           <Width>3.72318cm</Width>
@@ -1397,7 +1456,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox17</rd:DefaultName>
-          <Top>4.12143cm</Top>
+          <Top>4.43893cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.6cm</Height>
           <Width>3.72318cm</Width>
@@ -1432,7 +1491,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox18</rd:DefaultName>
-          <Top>4.72143cm</Top>
+          <Top>5.03893cm</Top>
           <Left>5.40201cm</Left>
           <Height>0.63528cm</Height>
           <Width>3.72318cm</Width>
@@ -1464,7 +1523,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox21</rd:DefaultName>
-          <Top>4.72143cm</Top>
+          <Top>5.03893cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.63528cm</Height>
           <Width>4.80286cm</Width>
@@ -1497,7 +1556,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
-          <Top>4.12143cm</Top>
+          <Top>4.43893cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.6cm</Height>
           <Width>4.80286cm</Width>
@@ -1538,7 +1597,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox19</rd:DefaultName>
-          <Top>3.52143cm</Top>
+          <Top>3.83893cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.6cm</Height>
           <Width>4.80286cm</Width>
@@ -1571,7 +1630,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>2.92143cm</Top>
+          <Top>3.23893cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.6cm</Height>
           <Width>4.80286cm</Width>
@@ -1606,7 +1665,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
-          <Top>2.34629cm</Top>
+          <Top>2.66379cm</Top>
           <Left>9.1252cm</Left>
           <Height>0.58397cm</Height>
           <Width>4.80286cm</Width>
@@ -1642,7 +1701,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>2.34629cm</Top>
+          <Top>2.66379cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.59279cm</Height>
           <Width>4.42556cm</Width>
@@ -1677,7 +1736,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>2.93907cm</Top>
+          <Top>3.25657cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.58236cm</Height>
           <Width>4.42556cm</Width>
@@ -1712,7 +1771,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox22</rd:DefaultName>
-          <Top>3.52143cm</Top>
+          <Top>3.83893cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.60868cm</Height>
           <Width>4.42556cm</Width>
@@ -1747,7 +1806,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox23</rd:DefaultName>
-          <Top>4.12143cm</Top>
+          <Top>4.43893cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.61764cm</Height>
           <Width>4.42556cm</Width>
@@ -1782,7 +1841,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
-          <Top>4.73907cm</Top>
+          <Top>5.05657cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.6cm</Height>
           <Width>4.42556cm</Width>
@@ -1817,7 +1876,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox29</rd:DefaultName>
-          <Top>5.33907cm</Top>
+          <Top>5.65657cm</Top>
           <Left>13.92806cm</Left>
           <Height>0.6cm</Height>
           <Width>4.42556cm</Width>
@@ -1849,7 +1908,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>2.34629cm</Top>
+          <Top>2.66379cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.57515cm</Height>
           <Width>4.21777cm</Width>
@@ -1882,7 +1941,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>2.92143cm</Top>
+          <Top>3.23893cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21777cm</Width>
@@ -1915,7 +1974,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
-          <Top>3.52143cm</Top>
+          <Top>3.83893cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21777cm</Width>
@@ -1948,7 +2007,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox26</rd:DefaultName>
-          <Top>4.12143cm</Top>
+          <Top>4.43893cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21777cm</Width>
@@ -1983,7 +2042,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox27</rd:DefaultName>
-          <Top>4.72143cm</Top>
+          <Top>5.03893cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.6cm</Height>
           <Width>4.21776cm</Width>
@@ -2016,7 +2075,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox30</rd:DefaultName>
-          <Top>5.32143cm</Top>
+          <Top>5.63893cm</Top>
           <Left>18.35362cm</Left>
           <Height>0.61764cm</Height>
           <Width>4.21777cm</Width>
@@ -2053,6 +2112,7 @@
                 <TextRun>
                   <Value>REMARKS :- </Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2084,6 +2144,7 @@
                 <TextRun>
                   <Value>JUDGEMENT BY INSPECTOR</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2096,7 +2157,7 @@
           <rd:DefaultName>Textbox255</rd:DefaultName>
           <Top>0.10583cm</Top>
           <Left>11.71812cm</Left>
-          <Height>0.5752cm</Height>
+          <Height>0.46937cm</Height>
           <Width>6.88023cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -2118,6 +2179,7 @@
                 <TextRun>
                   <Value>BEFORE ADJUST.</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2128,9 +2190,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox256</rd:DefaultName>
-          <Top>0.68103cm</Top>
+          <Top>0.5752cm</Top>
           <Left>11.71812cm</Left>
-          <Height>0.66586cm</Height>
+          <Height>0.43303cm</Height>
           <Width>3.6363cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
@@ -2152,6 +2214,7 @@
                 <TextRun>
                   <Value>AFTER ADJUST.</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -2162,9 +2225,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox257</rd:DefaultName>
-          <Top>0.68103cm</Top>
+          <Top>0.5752cm</Top>
           <Left>15.35442cm</Left>
-          <Height>0.66586cm</Height>
+          <Height>0.43303cm</Height>
           <Width>3.24393cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
@@ -2174,74 +2237,6 @@
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox259">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>-</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox259</rd:DefaultName>
-          <Top>1.34689cm</Top>
-          <Left>15.35442cm</Left>
-          <Height>1.05894cm</Height>
-          <Width>3.24393cm</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>8pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox258">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>OK</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox258</rd:DefaultName>
-          <Top>1.34689cm</Top>
-          <Left>11.71812cm</Left>
-          <Height>1.05894cm</Height>
-          <Width>3.6363cm</Width>
-          <ZIndex>5</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>8pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
@@ -2260,98 +2255,15 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox264</rd:DefaultName>
-          <Top>1.34689cm</Top>
+          <Top>1.00822cm</Top>
           <Left>18.59835cm</Left>
-          <Height>1.05894cm</Height>
+          <Height>1.39761cm</Height>
           <Width>3.10184cm</Width>
-          <ZIndex>6</ZIndex>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox261">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>INSPECTOR</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox261</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>18.59835cm</Left>
-          <Height>1.24106cm</Height>
-          <Width>3.10184cm</Width>
-          <ZIndex>7</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-            <VerticalAlign>Middle</VerticalAlign>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox262">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>APPROVED</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>BY</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox261</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>21.70019cm</Left>
-          <Height>1.24106cm</Height>
-          <Width>3.224cm</Width>
-          <ZIndex>8</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -2373,15 +2285,159 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox264</rd:DefaultName>
-          <Top>1.34689cm</Top>
+          <Top>1.00822cm</Top>
           <Left>21.70019cm</Left>
-          <Height>1.05894cm</Height>
+          <Height>1.39761cm</Height>
+          <Width>3.224cm</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox47">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>OK</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox47</rd:DefaultName>
+          <Top>1.00822cm</Top>
+          <Left>11.71812cm</Left>
+          <Height>1.39761cm</Height>
+          <Width>3.6363cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox48">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>-</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox48</rd:DefaultName>
+          <Top>1.00822cm</Top>
+          <Left>15.35442cm</Left>
+          <Height>1.39761cm</Height>
+          <Width>3.24393cm</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox51">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>INSPECTOR</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox51</rd:DefaultName>
+          <Top>0.10583cm</Top>
+          <Left>18.59835cm</Left>
+          <Height>0.90239cm</Height>
+          <Width>3.10184cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox52">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>APPROVED BY</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox51</rd:DefaultName>
+          <Top>0.10583cm</Top>
+          <Left>21.70019cm</Left>
+          <Height>0.90239cm</Height>
           <Width>3.224cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>

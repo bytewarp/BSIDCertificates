@@ -3124,19 +3124,6 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
                   <Value>PASS</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
@@ -3161,7 +3148,7 @@
             <VerticalAlign>Top</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
+            <PaddingTop>8pt</PaddingTop>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
@@ -3387,6 +3374,26 @@
         <rd:TableAdapterName>dtBB8TRReadingsTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
+    <DataSet Name="dsTempHumidity">
+      <Query>
+        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TempHumidityCombined">
+          <DataField>TempHumidityCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>dtTempHumidity</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>dtTempHumidityTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
     <DataSet Name="dsBB8TRDetails">
       <Query>
         <DataSourceName>BridgestoneCalDataSet</DataSourceName>
@@ -3449,30 +3456,10 @@
       <rd:DataSetInfo>
         <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
         <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>dtBB8Details</rd:TableName>
+        <rd:TableName>dtDeviceDetails</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>dtBB8DetailsTableAdapter</rd:TableAdapterName>
-      </rd:DataSetInfo>
-    </DataSet>
-    <DataSet Name="dsTempHumidity">
-      <Query>
-        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="TempHumidityCombined">
-          <DataField>TempHumidityCombined</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>dtTempHumidity</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>dtTempHumidityTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>dtDeviceDetailsTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

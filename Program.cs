@@ -5,6 +5,7 @@ using BSIDCertificates.DS24;
 using BSIDCertificates.DS25;
 using BSIDCertificates.PG;
 using BSIDCertificates.PH;
+using BSIDCertificates.RS;
 using BSIDCertificates.TC;
 using BSIDCertificates.TF;
 using BSIDCertificates.TR;
@@ -29,7 +30,7 @@ namespace BSIDCertificates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new XM01Form());
+            Application.Run(new PGForm());
         }
     }
 }

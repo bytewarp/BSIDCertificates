@@ -40,13 +40,13 @@ namespace BSIDCertificates.DS21
 
                 reportViewer1.LocalReport.DataSources.Clear();
 
-                ReportDataSource dsBQCT1DS21Readings = new ReportDataSource("dsBQCT1DS21Readings", dtBQCT1DS21Readings);
+                ReportDataSource dsBQCTDS21Readings = new ReportDataSource("dsBQCTDS21Readings", dtBQCT1DS21Readings);
                 ReportDataSource dsBQCT1DS21Details = new ReportDataSource("dsBQCT1DS21Details", dtDeviceDetails);
                 ReportDataSource dsTempHumidity = new ReportDataSource("dsTempHumidity", dtTempHumidity);
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
 
-                this.reportViewer1.LocalReport.DataSources.Add(dsBQCT1DS21Readings);
+                this.reportViewer1.LocalReport.DataSources.Add(dsBQCTDS21Readings);
                 this.reportViewer1.LocalReport.DataSources.Add(dsBQCT1DS21Details);
                 this.reportViewer1.LocalReport.DataSources.Add(dsTempHumidity);
 
@@ -75,7 +75,7 @@ namespace BSIDCertificates.DS21
                     {
                         cmd.Connection = con;
                         sda.SelectCommand = cmd;
-                        using (BridgestoneCalDataSet dsBQCT1DS21Readings = new BridgestoneCalDataSet())
+                        using (BridgestoneCalDataSet dsBQCTDS21Readings = new BridgestoneCalDataSet())
                         {
                             sda.Fill(dtBQCT1DS21Readings);
                             return dtBQCT1DS21Readings;

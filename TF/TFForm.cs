@@ -15,7 +15,7 @@ namespace BSIDCertificates.TF
     public partial class TFForm : Form
     {
         DataTable dtBB8TFReadings = new DataTable();
-        DataTable dtBB8Details = new DataTable();
+        DataTable dtDeviceDetails = new DataTable();
         DataTable dtTempHumidity = new DataTable();
         public TFForm()
         {
@@ -34,13 +34,13 @@ namespace BSIDCertificates.TF
             try
             {
                 dtBB8TFReadings = GetBB8TFReadingsDetails();
-                dtBB8Details = GetBB8TFDetails();
+                dtDeviceDetails = GetBB8TFDetails();
                 dtTempHumidity = GetTempHumidity();
 
                 reportViewer1.LocalReport.DataSources.Clear();
 
                 ReportDataSource dsBB8TFReadings = new ReportDataSource("dsBB8TFReadings", dtBB8TFReadings);
-                ReportDataSource dsBB8TFDetails = new ReportDataSource("dsBB8TFDetails", dtBB8Details);
+                ReportDataSource dsBB8TFDetails = new ReportDataSource("dsBB8TFDetails", dtDeviceDetails);
                 ReportDataSource dsTempHumidity = new ReportDataSource("dsTempHumidity", dtTempHumidity);
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
@@ -120,8 +120,8 @@ namespace BSIDCertificates.TF
                         sda.SelectCommand = cmd;
                         using (BridgestoneCalDataSet dsBB8TFDetails = new BridgestoneCalDataSet())
                         {
-                            sda.Fill(dtBB8Details);
-                            return dtBB8Details;
+                            sda.Fill(dtDeviceDetails);
+                            return dtDeviceDetails;
                         }
                     }
                 }

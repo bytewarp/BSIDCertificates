@@ -1495,7 +1495,13 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>MASTER GUAGE : STANDARD WEIGHTS</Value>
+                  <Value>MASTER GUAGE : </Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>=First(Fields!Inst_Name.Value, "dsBB8WSDetails")</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -1575,7 +1581,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>BB#8</Value>
+                  <Value>=First(Fields!Machine_Name.Value, "dsBB8WSDetails")</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -1610,7 +1616,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>1/1 YEAR</Value>
+                  <Value>=First(Fields!Cycle_Name.Value, "dsBB8WSDetails")</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -1987,7 +1993,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>300 Kg</Value>
+                  <Value>=First(Fields!Device_LHRangeCombined.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2020,7 +2026,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>BB#8</Value>
+                  <Value>=First(Fields!Machine_Name.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2053,7 +2059,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value> YAMATO</Value>
+                  <Value>=First(Fields!Device_Make.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2086,7 +2092,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>BB#8-WS-01</Value>
+                  <Value>=First(Fields!Device_ControlID.Value, "dsBB8WSDetails")</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -2121,7 +2127,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>CARBON WT SCALE</Value>
+                  <Value>=First(Fields!Device_Name.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2364,7 +2370,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>0.1 Kg</Value>
+                  <Value>=First(Fields!Device_LCCombined.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2397,7 +2403,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>± 0.2 Kg</Value>
+                  <Value>=First(Fields!Device_AccuracyCombined.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2430,7 +2436,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>22 °C 57 %</Value>
+                  <Value>=First(Fields!TempHumidityCombined.Value, "dsTempHumidity")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2463,7 +2469,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>± 500g &lt; 15 Kg, ± 2% &gt; 15 Kg</Value>
+                  <Value>=First(Fields!Device_JudgementCombined.Value, "dsBB8WSDetails")</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
@@ -2532,7 +2538,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>15 Kg - 300 Kg</Value>
+                  <Value>=First(Fields!Device_OPRangeCombined.Value, "dsBB8WSDetails")</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2581,7 +2587,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.39946cm</Height>
+      <Height>2.46296cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -2748,54 +2754,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox258">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>PASS</Value>
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value />
-                  <Style>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox258</rd:DefaultName>
-          <Top>1.23787cm</Top>
-          <Left>11.71812cm</Left>
-          <Height>1.05894cm</Height>
-          <Width>3.6363cm</Width>
-          <ZIndex>5</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-            <VerticalAlign>Middle</VerticalAlign>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>10pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="Textbox264">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -2815,7 +2773,7 @@
           <Left>18.59835cm</Left>
           <Height>1.05894cm</Height>
           <Width>3.10184cm</Width>
-          <ZIndex>6</ZIndex>
+          <ZIndex>5</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2849,7 +2807,7 @@
           <Left>18.59835cm</Left>
           <Height>1.24106cm</Height>
           <Width>3.10184cm</Width>
-          <ZIndex>7</ZIndex>
+          <ZIndex>6</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2897,7 +2855,7 @@
           <Left>21.70019cm</Left>
           <Height>1.24106cm</Height>
           <Width>3.224cm</Width>
-          <ZIndex>8</ZIndex>
+          <ZIndex>7</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -2928,11 +2886,46 @@
           <Left>21.70019cm</Left>
           <Height>1.05894cm</Height>
           <Width>3.224cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox56">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>PASS</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox56</rd:DefaultName>
+          <Top>1.23787cm</Top>
+          <Left>11.71812cm</Left>
+          <Height>1.05894cm</Height>
+          <Width>3.6363cm</Width>
           <ZIndex>9</ZIndex>
           <Style>
             <Border>
               <Style>Solid</Style>
             </Border>
+            <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -3008,6 +3001,94 @@
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
         <rd:TableAdapterName>dtBB8WSReadingsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsBB8WSDetails">
+      <Query>
+        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Machine_Name">
+          <DataField>Machine_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cycle_Name">
+          <DataField>Cycle_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_Name">
+          <DataField>Device_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_ControlID">
+          <DataField>Device_ControlID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_Make">
+          <DataField>Device_Make</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_Model">
+          <DataField>Device_Model</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_LHRangeCombined">
+          <DataField>Device_LHRangeCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_LCCombined">
+          <DataField>Device_LCCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_AccuracyCombined">
+          <DataField>Device_AccuracyCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_OPRangeCombined">
+          <DataField>Device_OPRangeCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Inst_Name">
+          <DataField>Inst_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Inst_ControlIDCombined">
+          <DataField>Inst_ControlIDCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Device_JudgementCombined">
+          <DataField>Device_JudgementCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>dtDeviceDetails</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>dtDeviceDetailsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsTempHumidity">
+      <Query>
+        <DataSourceName>BridgestoneCalDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TempHumidityCombined">
+          <DataField>TempHumidityCombined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BridgestoneCalDataSet</rd:DataSetName>
+        <rd:SchemaPath>D:\Projects\BridgestoneReport\BSIDCertificates\BridgestoneCalDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>dtTempHumidity</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>dtTempHumidityTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

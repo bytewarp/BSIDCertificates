@@ -15,7 +15,7 @@ namespace BSIDCertificates.TR
     public partial class TRForm : Form
     {
         DataTable dtBB8TRReadings = new DataTable();
-        DataTable dtBB8Details = new DataTable();
+        DataTable dtDeviceDetails = new DataTable();
         DataTable dtTempHumidity = new DataTable();
         public TRForm()
         {
@@ -34,13 +34,13 @@ namespace BSIDCertificates.TR
             try
             {
                 dtBB8TRReadings = GetBB8TRReadingsDetails();
-                dtBB8Details = GetBB8TRDetails();
+                dtDeviceDetails = GetBB8TRDetails();
                 dtTempHumidity = GetTempHumidity();
 
                 reportViewer1.LocalReport.DataSources.Clear();
 
                 ReportDataSource dsBB8TRReadings = new ReportDataSource("dsBB8TRReadings", dtBB8TRReadings);
-                ReportDataSource dsBB8TRDetails = new ReportDataSource("dsBB8TRDetails", dtBB8Details);
+                ReportDataSource dsBB8TRDetails = new ReportDataSource("dsBB8TRDetails", dtDeviceDetails);
                 ReportDataSource dsTempHumidity = new ReportDataSource("dsTempHumidity", dtTempHumidity);
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
@@ -121,8 +121,8 @@ namespace BSIDCertificates.TR
                         sda.SelectCommand = cmd;
                         using (BridgestoneCalDataSet dsBB8TRDetails = new BridgestoneCalDataSet())
                         {
-                            sda.Fill(dtBB8Details);
-                            return dtBB8Details;
+                            sda.Fill(dtDeviceDetails);
+                            return dtDeviceDetails;
                         }
                     }
                 }

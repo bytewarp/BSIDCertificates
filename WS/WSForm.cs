@@ -15,7 +15,7 @@ namespace BSIDCertificates
     public partial class WSForm : Form
     {
         DataTable dtBB8WSReadings = new DataTable();
-        DataTable dtBB8Details = new DataTable();
+        DataTable dtDeviceDetails = new DataTable();
         DataTable dtTempHumidity = new DataTable();
         public WSForm()
         {
@@ -35,13 +35,13 @@ namespace BSIDCertificates
             try
             {
                 dtBB8WSReadings = GetBB8WSReadingsDetails();
-                dtBB8Details = GetBB8WSDetails();
+                dtDeviceDetails = GetBB8WSDetails();
                 dtTempHumidity = GetTempHumidity();
 
                 reportViewer1.LocalReport.DataSources.Clear();
 
                 ReportDataSource dsBB8WSReadings = new ReportDataSource("dsBB8WSReadings", dtBB8WSReadings);
-                ReportDataSource dsBB8WSDetails = new ReportDataSource("dsBB8WSDetails", dtBB8Details);
+                ReportDataSource dsBB8WSDetails = new ReportDataSource("dsBB8WSDetails", dtDeviceDetails);
                 ReportDataSource dsTempHumidity = new ReportDataSource("dsTempHumidity", dtTempHumidity);
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
@@ -105,14 +105,16 @@ namespace BSIDCertificates
                         "CONCAT(Device_LHRangeCombined, ' ' , Device_RangeUnit) AS Device_LHRangeCombined, " +
                         "CONCAT(Device_LC, ' ' , Device_LCUnit) AS Device_LCCombined, " +
                         "CONCAT(Device_Accuracy, ' ' , Device_AccuracyUnit) AS Device_AccuracyCombined, " +
-                        "Device_JudgementSpecs, CONCAT(Device_LHOPRangeCombined, ' ' , Device_OperatingRangeUnit) AS Device_OPRangeCombined, " +
+                        "CONCAT(Device_JudgementSpecs, ' ' , Device_JudgementUnit) AS Device_JudgementCombined," +
+                        "CONCAT(Device_LHOPRangeCombined, ' ' , Device_OperatingRangeUnit) AS Device_OPRangeCombined, " +
                         "Inst_Name, Inst_ControlIDCombined FROM tblDeviceMaster " +
                         "join tblMachineMaster on tblDeviceMaster.Machine_ID = tblMachineMaster.Machine_ID " +
                         "join tblCycleMaster on tblDeviceMaster.Cycle_ID = tblCycleMaster.Cycle_ID " +
                         "join tblDeviceInstMaster on tblDeviceMaster.Device_ID = tblDeviceInstMaster.Device_ID " +
                         "join tblInstrumentMaster on tblDeviceInstMaster.Inst_ID = tblInstrumentMaster.Inst_ID " +
-                        "where tblDeviceMaster.Device_ControlID=@Device_ControlID ", con);
+                        "where tblDeviceMaster.Device_ControlID=@Device_ControlID and tblInstrumentMaster.Inst_Name=@Inst_Name ", con);
                     cmd.Parameters.AddWithValue("@Device_ControlID", "BB#8-WS-01");
+                    cmd.Parameters.AddWithValue("@Inst_Name", "Standard weight");
 
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
@@ -120,8 +122,8 @@ namespace BSIDCertificates
                         sda.SelectCommand = cmd;
                         using (BridgestoneCalDataSet dsBB8WSDetails = new BridgestoneCalDataSet())
                         {
-                            sda.Fill(dtBB8Details);
-                            return dtBB8Details;
+                            sda.Fill(dtDeviceDetails);
+                            return dtDeviceDetails;
                         }
                     }
                 }

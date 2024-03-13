@@ -15,7 +15,7 @@ namespace BSIDCertificates.PG
     public partial class PGForm : Form
     {
         DataTable dtBB8PGReadings = new DataTable();
-        DataTable dtBB8Details = new DataTable();
+        DataTable dtDeviceDetails = new DataTable();
         DataTable dtTempHumidity = new DataTable();
         public PGForm()
         {
@@ -34,13 +34,13 @@ namespace BSIDCertificates.PG
             try
             {
                 dtBB8PGReadings = GetBB8PGReadingsDetails();
-                dtBB8Details = GetBB8PGDetails();
+                dtDeviceDetails = GetBB8PGDetails();
                 dtTempHumidity = GetTempHumidity();
 
                 reportViewer1.LocalReport.DataSources.Clear();
 
                 ReportDataSource dsBB8PGReadings = new ReportDataSource("dsBB8PGReadings", dtBB8PGReadings);
-                ReportDataSource dsBB8PGDetails = new ReportDataSource("dsBB8PGDetails", dtBB8Details);
+                ReportDataSource dsBB8PGDetails = new ReportDataSource("dsBB8PGDetails", dtDeviceDetails);
                 ReportDataSource dsTempHumidity = new ReportDataSource("dsTempHumidity", dtTempHumidity);
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
@@ -120,8 +120,8 @@ namespace BSIDCertificates.PG
                         sda.SelectCommand = cmd;
                         using (BridgestoneCalDataSet dsBB8PGDetails = new BridgestoneCalDataSet())
                         {
-                            sda.Fill(dtBB8Details);
-                            return dtBB8Details;
+                            sda.Fill(dtDeviceDetails);
+                            return dtDeviceDetails;
                         }
                     }
                 }
