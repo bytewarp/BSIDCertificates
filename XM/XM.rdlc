@@ -489,7 +489,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsBB8XMReadings</DataSetName>
-        <Top>0.17639cm</Top>
+        <Top>0.49389cm</Top>
         <Left>0.08025cm</Left>
         <Height>2.72362cm</Height>
         <Width>12.8555cm</Width>
@@ -846,7 +846,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsBB8XMReadings</DataSetName>
-        <Top>0.17639cm</Top>
+        <Top>0.49389cm</Top>
         <Left>14.8057cm</Left>
         <Height>2.72361cm</Height>
         <Width>10.11849cm</Width>
@@ -858,7 +858,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.06933cm</Height>
+    <Height>3.3445cm</Height>
     <Style />
   </Body>
   <Width>25cm</Width>
@@ -1449,7 +1449,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
+                  <Value>1/5-Dec-2013</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>

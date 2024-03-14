@@ -30,7 +30,7 @@ namespace BSIDCertificates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PGForm());
+            Application.Run(new WSForm());
         }
     }
 }
