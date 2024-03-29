@@ -58,6 +58,10 @@ namespace BSIDCertificates {
         
         private dtBQCT1RS28ReadingsDataTable tabledtBQCT1RS28Readings;
         
+        private dtRBDS08ReadingsDataTable tabledtRBDS08Readings;
+        
+        private dtBCLWS12ReadingsDataTable tabledtBCLWS12Readings;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -136,6 +140,12 @@ namespace BSIDCertificates {
                 }
                 if ((ds.Tables["dtBQCT1RS28Readings"] != null)) {
                     base.Tables.Add(new dtBQCT1RS28ReadingsDataTable(ds.Tables["dtBQCT1RS28Readings"]));
+                }
+                if ((ds.Tables["dtRBDS08Readings"] != null)) {
+                    base.Tables.Add(new dtRBDS08ReadingsDataTable(ds.Tables["dtRBDS08Readings"]));
+                }
+                if ((ds.Tables["dtBCLWS12Readings"] != null)) {
+                    base.Tables.Add(new dtBCLWS12ReadingsDataTable(ds.Tables["dtBCLWS12Readings"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -327,6 +337,26 @@ namespace BSIDCertificates {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public dtRBDS08ReadingsDataTable dtRBDS08Readings {
+            get {
+                return this.tabledtRBDS08Readings;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public dtBCLWS12ReadingsDataTable dtBCLWS12Readings {
+            get {
+                return this.tabledtBCLWS12Readings;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -442,6 +472,12 @@ namespace BSIDCertificates {
                 }
                 if ((ds.Tables["dtBQCT1RS28Readings"] != null)) {
                     base.Tables.Add(new dtBQCT1RS28ReadingsDataTable(ds.Tables["dtBQCT1RS28Readings"]));
+                }
+                if ((ds.Tables["dtRBDS08Readings"] != null)) {
+                    base.Tables.Add(new dtRBDS08ReadingsDataTable(ds.Tables["dtRBDS08Readings"]));
+                }
+                if ((ds.Tables["dtBCLWS12Readings"] != null)) {
+                    base.Tables.Add(new dtBCLWS12ReadingsDataTable(ds.Tables["dtBCLWS12Readings"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -578,6 +614,18 @@ namespace BSIDCertificates {
                     this.tabledtBQCT1RS28Readings.InitVars();
                 }
             }
+            this.tabledtRBDS08Readings = ((dtRBDS08ReadingsDataTable)(base.Tables["dtRBDS08Readings"]));
+            if ((initTable == true)) {
+                if ((this.tabledtRBDS08Readings != null)) {
+                    this.tabledtRBDS08Readings.InitVars();
+                }
+            }
+            this.tabledtBCLWS12Readings = ((dtBCLWS12ReadingsDataTable)(base.Tables["dtBCLWS12Readings"]));
+            if ((initTable == true)) {
+                if ((this.tabledtBCLWS12Readings != null)) {
+                    this.tabledtBCLWS12Readings.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -622,6 +670,10 @@ namespace BSIDCertificates {
             base.Tables.Add(this.tabledtBQCT1XM01Readings);
             this.tabledtBQCT1RS28Readings = new dtBQCT1RS28ReadingsDataTable();
             base.Tables.Add(this.tabledtBQCT1RS28Readings);
+            this.tabledtRBDS08Readings = new dtRBDS08ReadingsDataTable();
+            base.Tables.Add(this.tabledtRBDS08Readings);
+            this.tabledtBCLWS12Readings = new dtBCLWS12ReadingsDataTable();
+            base.Tables.Add(this.tabledtBCLWS12Readings);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -723,6 +775,18 @@ namespace BSIDCertificates {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializedtBQCT1RS28Readings() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializedtRBDS08Readings() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializedtBCLWS12Readings() {
             return false;
         }
         
@@ -831,6 +895,12 @@ namespace BSIDCertificates {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void dtBQCT1RS28ReadingsRowChangeEventHandler(object sender, dtBQCT1RS28ReadingsRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void dtRBDS08ReadingsRowChangeEventHandler(object sender, dtRBDS08ReadingsRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void dtBCLWS12ReadingsRowChangeEventHandler(object sender, dtBCLWS12ReadingsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -6129,6 +6199,607 @@ namespace BSIDCertificates {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class dtRBDS08ReadingsDataTable : global::System.Data.TypedTableBase<dtRBDS08ReadingsRow> {
+            
+            private global::System.Data.DataColumn columnRBDS08_OPSideNominalValue;
+            
+            private global::System.Data.DataColumn columnRBDS08_OPSideMeasuredValue;
+            
+            private global::System.Data.DataColumn columnRBDS08_OPSideError;
+            
+            private global::System.Data.DataColumn columnRBDS08_DRSideNominalValue;
+            
+            private global::System.Data.DataColumn columnRBDS08_DRSideMeasuredValue;
+            
+            private global::System.Data.DataColumn columnRBDS08_DRSideError;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtRBDS08ReadingsDataTable() {
+                this.TableName = "dtRBDS08Readings";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal dtRBDS08ReadingsDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected dtRBDS08ReadingsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RBDS08_OPSideNominalValueColumn {
+                get {
+                    return this.columnRBDS08_OPSideNominalValue;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RBDS08_OPSideMeasuredValueColumn {
+                get {
+                    return this.columnRBDS08_OPSideMeasuredValue;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RBDS08_OPSideErrorColumn {
+                get {
+                    return this.columnRBDS08_OPSideError;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RBDS08_DRSideNominalValueColumn {
+                get {
+                    return this.columnRBDS08_DRSideNominalValue;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RBDS08_DRSideMeasuredValueColumn {
+                get {
+                    return this.columnRBDS08_DRSideMeasuredValue;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RBDS08_DRSideErrorColumn {
+                get {
+                    return this.columnRBDS08_DRSideError;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtRBDS08ReadingsRow this[int index] {
+                get {
+                    return ((dtRBDS08ReadingsRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtRBDS08ReadingsRowChangeEventHandler dtRBDS08ReadingsRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtRBDS08ReadingsRowChangeEventHandler dtRBDS08ReadingsRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtRBDS08ReadingsRowChangeEventHandler dtRBDS08ReadingsRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtRBDS08ReadingsRowChangeEventHandler dtRBDS08ReadingsRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AdddtRBDS08ReadingsRow(dtRBDS08ReadingsRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtRBDS08ReadingsRow AdddtRBDS08ReadingsRow(string RBDS08_OPSideNominalValue, string RBDS08_OPSideMeasuredValue, string RBDS08_OPSideError, string RBDS08_DRSideNominalValue, string RBDS08_DRSideMeasuredValue, string RBDS08_DRSideError) {
+                dtRBDS08ReadingsRow rowdtRBDS08ReadingsRow = ((dtRBDS08ReadingsRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        RBDS08_OPSideNominalValue,
+                        RBDS08_OPSideMeasuredValue,
+                        RBDS08_OPSideError,
+                        RBDS08_DRSideNominalValue,
+                        RBDS08_DRSideMeasuredValue,
+                        RBDS08_DRSideError};
+                rowdtRBDS08ReadingsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowdtRBDS08ReadingsRow);
+                return rowdtRBDS08ReadingsRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                dtRBDS08ReadingsDataTable cln = ((dtRBDS08ReadingsDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new dtRBDS08ReadingsDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnRBDS08_OPSideNominalValue = base.Columns["RBDS08_OPSideNominalValue"];
+                this.columnRBDS08_OPSideMeasuredValue = base.Columns["RBDS08_OPSideMeasuredValue"];
+                this.columnRBDS08_OPSideError = base.Columns["RBDS08_OPSideError"];
+                this.columnRBDS08_DRSideNominalValue = base.Columns["RBDS08_DRSideNominalValue"];
+                this.columnRBDS08_DRSideMeasuredValue = base.Columns["RBDS08_DRSideMeasuredValue"];
+                this.columnRBDS08_DRSideError = base.Columns["RBDS08_DRSideError"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnRBDS08_OPSideNominalValue = new global::System.Data.DataColumn("RBDS08_OPSideNominalValue", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRBDS08_OPSideNominalValue);
+                this.columnRBDS08_OPSideMeasuredValue = new global::System.Data.DataColumn("RBDS08_OPSideMeasuredValue", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRBDS08_OPSideMeasuredValue);
+                this.columnRBDS08_OPSideError = new global::System.Data.DataColumn("RBDS08_OPSideError", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRBDS08_OPSideError);
+                this.columnRBDS08_DRSideNominalValue = new global::System.Data.DataColumn("RBDS08_DRSideNominalValue", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRBDS08_DRSideNominalValue);
+                this.columnRBDS08_DRSideMeasuredValue = new global::System.Data.DataColumn("RBDS08_DRSideMeasuredValue", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRBDS08_DRSideMeasuredValue);
+                this.columnRBDS08_DRSideError = new global::System.Data.DataColumn("RBDS08_DRSideError", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRBDS08_DRSideError);
+                this.columnRBDS08_OPSideNominalValue.MaxLength = 50;
+                this.columnRBDS08_OPSideMeasuredValue.MaxLength = 50;
+                this.columnRBDS08_OPSideError.MaxLength = 50;
+                this.columnRBDS08_DRSideNominalValue.MaxLength = 50;
+                this.columnRBDS08_DRSideMeasuredValue.MaxLength = 50;
+                this.columnRBDS08_DRSideError.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtRBDS08ReadingsRow NewdtRBDS08ReadingsRow() {
+                return ((dtRBDS08ReadingsRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new dtRBDS08ReadingsRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(dtRBDS08ReadingsRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.dtRBDS08ReadingsRowChanged != null)) {
+                    this.dtRBDS08ReadingsRowChanged(this, new dtRBDS08ReadingsRowChangeEvent(((dtRBDS08ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.dtRBDS08ReadingsRowChanging != null)) {
+                    this.dtRBDS08ReadingsRowChanging(this, new dtRBDS08ReadingsRowChangeEvent(((dtRBDS08ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.dtRBDS08ReadingsRowDeleted != null)) {
+                    this.dtRBDS08ReadingsRowDeleted(this, new dtRBDS08ReadingsRowChangeEvent(((dtRBDS08ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.dtRBDS08ReadingsRowDeleting != null)) {
+                    this.dtRBDS08ReadingsRowDeleting(this, new dtRBDS08ReadingsRowChangeEvent(((dtRBDS08ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemovedtRBDS08ReadingsRow(dtRBDS08ReadingsRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                BridgestoneCalDataSet ds = new BridgestoneCalDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "dtRBDS08ReadingsDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class dtBCLWS12ReadingsDataTable : global::System.Data.TypedTableBase<dtBCLWS12ReadingsRow> {
+            
+            private global::System.Data.DataColumn columnBCLWS12_NominalValue;
+            
+            private global::System.Data.DataColumn columnBCLWS12_MeasuredValue;
+            
+            private global::System.Data.DataColumn columnBCLWS12_Error;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBCLWS12ReadingsDataTable() {
+                this.TableName = "dtBCLWS12Readings";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal dtBCLWS12ReadingsDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected dtBCLWS12ReadingsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BCLWS12_NominalValueColumn {
+                get {
+                    return this.columnBCLWS12_NominalValue;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BCLWS12_MeasuredValueColumn {
+                get {
+                    return this.columnBCLWS12_MeasuredValue;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BCLWS12_ErrorColumn {
+                get {
+                    return this.columnBCLWS12_Error;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBCLWS12ReadingsRow this[int index] {
+                get {
+                    return ((dtBCLWS12ReadingsRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBCLWS12ReadingsRowChangeEventHandler dtBCLWS12ReadingsRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBCLWS12ReadingsRowChangeEventHandler dtBCLWS12ReadingsRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBCLWS12ReadingsRowChangeEventHandler dtBCLWS12ReadingsRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event dtBCLWS12ReadingsRowChangeEventHandler dtBCLWS12ReadingsRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AdddtBCLWS12ReadingsRow(dtBCLWS12ReadingsRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBCLWS12ReadingsRow AdddtBCLWS12ReadingsRow(string BCLWS12_NominalValue, string BCLWS12_MeasuredValue, string BCLWS12_Error) {
+                dtBCLWS12ReadingsRow rowdtBCLWS12ReadingsRow = ((dtBCLWS12ReadingsRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        BCLWS12_NominalValue,
+                        BCLWS12_MeasuredValue,
+                        BCLWS12_Error};
+                rowdtBCLWS12ReadingsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowdtBCLWS12ReadingsRow);
+                return rowdtBCLWS12ReadingsRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                dtBCLWS12ReadingsDataTable cln = ((dtBCLWS12ReadingsDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new dtBCLWS12ReadingsDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnBCLWS12_NominalValue = base.Columns["BCLWS12_NominalValue"];
+                this.columnBCLWS12_MeasuredValue = base.Columns["BCLWS12_MeasuredValue"];
+                this.columnBCLWS12_Error = base.Columns["BCLWS12_Error"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnBCLWS12_NominalValue = new global::System.Data.DataColumn("BCLWS12_NominalValue", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBCLWS12_NominalValue);
+                this.columnBCLWS12_MeasuredValue = new global::System.Data.DataColumn("BCLWS12_MeasuredValue", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBCLWS12_MeasuredValue);
+                this.columnBCLWS12_Error = new global::System.Data.DataColumn("BCLWS12_Error", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBCLWS12_Error);
+                this.columnBCLWS12_NominalValue.MaxLength = 50;
+                this.columnBCLWS12_MeasuredValue.MaxLength = 50;
+                this.columnBCLWS12_Error.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBCLWS12ReadingsRow NewdtBCLWS12ReadingsRow() {
+                return ((dtBCLWS12ReadingsRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new dtBCLWS12ReadingsRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(dtBCLWS12ReadingsRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.dtBCLWS12ReadingsRowChanged != null)) {
+                    this.dtBCLWS12ReadingsRowChanged(this, new dtBCLWS12ReadingsRowChangeEvent(((dtBCLWS12ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.dtBCLWS12ReadingsRowChanging != null)) {
+                    this.dtBCLWS12ReadingsRowChanging(this, new dtBCLWS12ReadingsRowChangeEvent(((dtBCLWS12ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.dtBCLWS12ReadingsRowDeleted != null)) {
+                    this.dtBCLWS12ReadingsRowDeleted(this, new dtBCLWS12ReadingsRowChangeEvent(((dtBCLWS12ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.dtBCLWS12ReadingsRowDeleting != null)) {
+                    this.dtBCLWS12ReadingsRowDeleting(this, new dtBCLWS12ReadingsRowChangeEvent(((dtBCLWS12ReadingsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemovedtBCLWS12ReadingsRow(dtBCLWS12ReadingsRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                BridgestoneCalDataSet ds = new BridgestoneCalDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "dtBCLWS12ReadingsDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class dtBB8PGReadingsRow : global::System.Data.DataRow {
@@ -8746,6 +9417,294 @@ namespace BSIDCertificates {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class dtRBDS08ReadingsRow : global::System.Data.DataRow {
+            
+            private dtRBDS08ReadingsDataTable tabledtRBDS08Readings;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal dtRBDS08ReadingsRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabledtRBDS08Readings = ((dtRBDS08ReadingsDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RBDS08_OPSideNominalValue {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtRBDS08Readings.RBDS08_OPSideNominalValueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RBDS08_OPSideNominalValue\' in table \'dtRBDS08Readings\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtRBDS08Readings.RBDS08_OPSideNominalValueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RBDS08_OPSideMeasuredValue {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtRBDS08Readings.RBDS08_OPSideMeasuredValueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RBDS08_OPSideMeasuredValue\' in table \'dtRBDS08Readings\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtRBDS08Readings.RBDS08_OPSideMeasuredValueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RBDS08_OPSideError {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtRBDS08Readings.RBDS08_OPSideErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RBDS08_OPSideError\' in table \'dtRBDS08Readings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtRBDS08Readings.RBDS08_OPSideErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RBDS08_DRSideNominalValue {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtRBDS08Readings.RBDS08_DRSideNominalValueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RBDS08_DRSideNominalValue\' in table \'dtRBDS08Readings\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtRBDS08Readings.RBDS08_DRSideNominalValueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RBDS08_DRSideMeasuredValue {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtRBDS08Readings.RBDS08_DRSideMeasuredValueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RBDS08_DRSideMeasuredValue\' in table \'dtRBDS08Readings\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtRBDS08Readings.RBDS08_DRSideMeasuredValueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RBDS08_DRSideError {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtRBDS08Readings.RBDS08_DRSideErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RBDS08_DRSideError\' in table \'dtRBDS08Readings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtRBDS08Readings.RBDS08_DRSideErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRBDS08_OPSideNominalValueNull() {
+                return this.IsNull(this.tabledtRBDS08Readings.RBDS08_OPSideNominalValueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRBDS08_OPSideNominalValueNull() {
+                this[this.tabledtRBDS08Readings.RBDS08_OPSideNominalValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRBDS08_OPSideMeasuredValueNull() {
+                return this.IsNull(this.tabledtRBDS08Readings.RBDS08_OPSideMeasuredValueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRBDS08_OPSideMeasuredValueNull() {
+                this[this.tabledtRBDS08Readings.RBDS08_OPSideMeasuredValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRBDS08_OPSideErrorNull() {
+                return this.IsNull(this.tabledtRBDS08Readings.RBDS08_OPSideErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRBDS08_OPSideErrorNull() {
+                this[this.tabledtRBDS08Readings.RBDS08_OPSideErrorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRBDS08_DRSideNominalValueNull() {
+                return this.IsNull(this.tabledtRBDS08Readings.RBDS08_DRSideNominalValueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRBDS08_DRSideNominalValueNull() {
+                this[this.tabledtRBDS08Readings.RBDS08_DRSideNominalValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRBDS08_DRSideMeasuredValueNull() {
+                return this.IsNull(this.tabledtRBDS08Readings.RBDS08_DRSideMeasuredValueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRBDS08_DRSideMeasuredValueNull() {
+                this[this.tabledtRBDS08Readings.RBDS08_DRSideMeasuredValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRBDS08_DRSideErrorNull() {
+                return this.IsNull(this.tabledtRBDS08Readings.RBDS08_DRSideErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRBDS08_DRSideErrorNull() {
+                this[this.tabledtRBDS08Readings.RBDS08_DRSideErrorColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class dtBCLWS12ReadingsRow : global::System.Data.DataRow {
+            
+            private dtBCLWS12ReadingsDataTable tabledtBCLWS12Readings;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal dtBCLWS12ReadingsRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabledtBCLWS12Readings = ((dtBCLWS12ReadingsDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BCLWS12_NominalValue {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBCLWS12Readings.BCLWS12_NominalValueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BCLWS12_NominalValue\' in table \'dtBCLWS12Readings\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBCLWS12Readings.BCLWS12_NominalValueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BCLWS12_MeasuredValue {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBCLWS12Readings.BCLWS12_MeasuredValueColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BCLWS12_MeasuredValue\' in table \'dtBCLWS12Readings\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBCLWS12Readings.BCLWS12_MeasuredValueColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BCLWS12_Error {
+                get {
+                    try {
+                        return ((string)(this[this.tabledtBCLWS12Readings.BCLWS12_ErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BCLWS12_Error\' in table \'dtBCLWS12Readings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtBCLWS12Readings.BCLWS12_ErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBCLWS12_NominalValueNull() {
+                return this.IsNull(this.tabledtBCLWS12Readings.BCLWS12_NominalValueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBCLWS12_NominalValueNull() {
+                this[this.tabledtBCLWS12Readings.BCLWS12_NominalValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBCLWS12_MeasuredValueNull() {
+                return this.IsNull(this.tabledtBCLWS12Readings.BCLWS12_MeasuredValueColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBCLWS12_MeasuredValueNull() {
+                this[this.tabledtBCLWS12Readings.BCLWS12_MeasuredValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBCLWS12_ErrorNull() {
+                return this.IsNull(this.tabledtBCLWS12Readings.BCLWS12_ErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBCLWS12_ErrorNull() {
+                this[this.tabledtBCLWS12Readings.BCLWS12_ErrorColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -9309,6 +10268,74 @@ namespace BSIDCertificates {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public dtBQCT1RS28ReadingsRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class dtRBDS08ReadingsRowChangeEvent : global::System.EventArgs {
+            
+            private dtRBDS08ReadingsRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtRBDS08ReadingsRowChangeEvent(dtRBDS08ReadingsRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtRBDS08ReadingsRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class dtBCLWS12ReadingsRowChangeEvent : global::System.EventArgs {
+            
+            private dtBCLWS12ReadingsRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBCLWS12ReadingsRowChangeEvent(dtBCLWS12ReadingsRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public dtBCLWS12ReadingsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -13572,6 +14599,523 @@ from tblBB8TRReadingsMaster";
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class dtRBDS08ReadingsTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public dtRBDS08ReadingsTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "dtRBDS08Readings";
+            tableMapping.ColumnMappings.Add("RBDS08_OPSideNominalValue", "RBDS08_OPSideNominalValue");
+            tableMapping.ColumnMappings.Add("RBDS08_OPSideMeasuredValue", "RBDS08_OPSideMeasuredValue");
+            tableMapping.ColumnMappings.Add("RBDS08_OPSideError", "RBDS08_OPSideError");
+            tableMapping.ColumnMappings.Add("RBDS08_DRSideNominalValue", "RBDS08_DRSideNominalValue");
+            tableMapping.ColumnMappings.Add("RBDS08_DRSideMeasuredValue", "RBDS08_DRSideMeasuredValue");
+            tableMapping.ColumnMappings.Add("RBDS08_DRSideError", "RBDS08_DRSideError");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [tblRBDS08ReadingsMaster] ([RBDS08_OPSideNominalValue], [RBDS08_OPSideMeasuredValue], [RBDS08_OPSideError], [RBDS08_DRSideNominalValue], [RBDS08_DRSideMeasuredValue], [RBDS08_DRSideError]) VALUES (@RBDS08_OPSideNominalValue, @RBDS08_OPSideMeasuredValue, @RBDS08_OPSideError, @RBDS08_DRSideNominalValue, @RBDS08_DRSideMeasuredValue, @RBDS08_DRSideError)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RBDS08_OPSideNominalValue", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RBDS08_OPSideNominalValue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RBDS08_OPSideMeasuredValue", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RBDS08_OPSideMeasuredValue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RBDS08_OPSideError", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RBDS08_OPSideError", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RBDS08_DRSideNominalValue", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RBDS08_DRSideNominalValue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RBDS08_DRSideMeasuredValue", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RBDS08_DRSideMeasuredValue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RBDS08_DRSideError", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RBDS08_DRSideError", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::BSIDCertificates.Properties.Settings.Default.BridgestoneCalConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "select RBDS08_OPSideNominalValue, RBDS08_OPSideMeasuredValue, RBDS08_OPSideError," +
+                "\r\nRBDS08_DRSideNominalValue, RBDS08_DRSideMeasuredValue, RBDS08_DRSideError\r\nfro" +
+                "m tblRBDS08ReadingsMaster";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(BridgestoneCalDataSet.dtRBDS08ReadingsDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual BridgestoneCalDataSet.dtRBDS08ReadingsDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            BridgestoneCalDataSet.dtRBDS08ReadingsDataTable dataTable = new BridgestoneCalDataSet.dtRBDS08ReadingsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(BridgestoneCalDataSet.dtRBDS08ReadingsDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(BridgestoneCalDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "dtRBDS08Readings");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string RBDS08_OPSideNominalValue, string RBDS08_OPSideMeasuredValue, string RBDS08_OPSideError, string RBDS08_DRSideNominalValue, string RBDS08_DRSideMeasuredValue, string RBDS08_DRSideError) {
+            if ((RBDS08_OPSideNominalValue == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(RBDS08_OPSideNominalValue));
+            }
+            if ((RBDS08_OPSideMeasuredValue == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(RBDS08_OPSideMeasuredValue));
+            }
+            if ((RBDS08_OPSideError == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(RBDS08_OPSideError));
+            }
+            if ((RBDS08_DRSideNominalValue == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(RBDS08_DRSideNominalValue));
+            }
+            if ((RBDS08_DRSideMeasuredValue == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(RBDS08_DRSideMeasuredValue));
+            }
+            if ((RBDS08_DRSideError == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(RBDS08_DRSideError));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class dtBCLWS12ReadingsTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public dtBCLWS12ReadingsTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "dtBCLWS12Readings";
+            tableMapping.ColumnMappings.Add("BCLWS12_NominalValue", "BCLWS12_NominalValue");
+            tableMapping.ColumnMappings.Add("BCLWS12_MeasuredValue", "BCLWS12_MeasuredValue");
+            tableMapping.ColumnMappings.Add("BCLWS12_Error", "BCLWS12_Error");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [tblBCLWS12ReadingsMaster] ([BCLWS12_NominalValue], [BCLWS12_Measured" +
+                "Value], [BCLWS12_Error]) VALUES (@BCLWS12_NominalValue, @BCLWS12_MeasuredValue, " +
+                "@BCLWS12_Error)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BCLWS12_NominalValue", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BCLWS12_NominalValue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BCLWS12_MeasuredValue", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BCLWS12_MeasuredValue", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BCLWS12_Error", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BCLWS12_Error", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::BSIDCertificates.Properties.Settings.Default.BridgestoneCalConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "select BCLWS12_NominalValue, BCLWS12_MeasuredValue, BCLWS12_Error\r\nfrom tblBCLWS1" +
+                "2ReadingsMaster";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(BridgestoneCalDataSet.dtBCLWS12ReadingsDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual BridgestoneCalDataSet.dtBCLWS12ReadingsDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            BridgestoneCalDataSet.dtBCLWS12ReadingsDataTable dataTable = new BridgestoneCalDataSet.dtBCLWS12ReadingsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(BridgestoneCalDataSet.dtBCLWS12ReadingsDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(BridgestoneCalDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "dtBCLWS12Readings");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string BCLWS12_NominalValue, string BCLWS12_MeasuredValue, string BCLWS12_Error) {
+            if ((BCLWS12_NominalValue == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(BCLWS12_NominalValue));
+            }
+            if ((BCLWS12_MeasuredValue == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(BCLWS12_MeasuredValue));
+            }
+            if ((BCLWS12_Error == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(BCLWS12_Error));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13612,6 +15156,10 @@ from tblBB8TRReadingsMaster";
         private dtBQCT1XM01ReadingsTableAdapter _dtBQCT1XM01ReadingsTableAdapter;
         
         private dtBQCT1RS28ReadingsTableAdapter _dtBQCT1RS28ReadingsTableAdapter;
+        
+        private dtRBDS08ReadingsTableAdapter _dtRBDS08ReadingsTableAdapter;
+        
+        private dtBCLWS12ReadingsTableAdapter _dtBCLWS12ReadingsTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -13840,6 +15388,34 @@ from tblBB8TRReadingsMaster";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public dtRBDS08ReadingsTableAdapter dtRBDS08ReadingsTableAdapter {
+            get {
+                return this._dtRBDS08ReadingsTableAdapter;
+            }
+            set {
+                this._dtRBDS08ReadingsTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public dtBCLWS12ReadingsTableAdapter dtBCLWS12ReadingsTableAdapter {
+            get {
+                return this._dtBCLWS12ReadingsTableAdapter;
+            }
+            set {
+                this._dtBCLWS12ReadingsTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -13917,6 +15493,14 @@ from tblBB8TRReadingsMaster";
                             && (this._dtBQCT1RS28ReadingsTableAdapter.Connection != null))) {
                     return this._dtBQCT1RS28ReadingsTableAdapter.Connection;
                 }
+                if (((this._dtRBDS08ReadingsTableAdapter != null) 
+                            && (this._dtRBDS08ReadingsTableAdapter.Connection != null))) {
+                    return this._dtRBDS08ReadingsTableAdapter.Connection;
+                }
+                if (((this._dtBCLWS12ReadingsTableAdapter != null) 
+                            && (this._dtBCLWS12ReadingsTableAdapter.Connection != null))) {
+                    return this._dtBCLWS12ReadingsTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -13975,6 +15559,12 @@ from tblBB8TRReadingsMaster";
                 if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._dtRBDS08ReadingsTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._dtBCLWS12ReadingsTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -13992,6 +15582,24 @@ from tblBB8TRReadingsMaster";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._dtBB8PGReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -14040,6 +15648,15 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._dtRBDS08ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtRBDS08Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dtRBDS08ReadingsTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -14049,21 +15666,12 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(updatedRows));
+                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -14103,21 +15711,21 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(updatedRows));
+                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dtBCLWS12ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.dtBCLWS12Readings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(updatedRows));
+                    result = (result + this._dtBCLWS12ReadingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -14136,6 +15744,22 @@ from tblBB8TRReadingsMaster";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._dtBB8PGReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -14179,6 +15803,14 @@ from tblBB8TRReadingsMaster";
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._dtRBDS08ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtRBDS08Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dtRBDS08ReadingsTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._dtBQCT1DS22ReadingsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS22Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -14187,19 +15819,11 @@ from tblBB8TRReadingsMaster";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(addedRows));
+                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -14235,19 +15859,19 @@ from tblBB8TRReadingsMaster";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(addedRows));
+                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dtBCLWS12ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.dtBCLWS12Readings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(addedRows));
+                    result = (result + this._dtBCLWS12ReadingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -14261,19 +15885,19 @@ from tblBB8TRReadingsMaster";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(BridgestoneCalDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dtBCLWS12ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBCLWS12Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(deletedRows));
+                    result = (result + this._dtBCLWS12ReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(deletedRows));
+                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -14309,19 +15933,11 @@ from tblBB8TRReadingsMaster";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dtBQCT1DS21ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1DS21Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dtBQCT1TCReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1TCReadings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1DS21ReadingsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(deletedRows));
+                    result = (result + this._dtBQCT1TCReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -14330,6 +15946,14 @@ from tblBB8TRReadingsMaster";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._dtBQCT1DS22ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtRBDS08ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtRBDS08Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtRBDS08ReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -14370,6 +15994,22 @@ from tblBB8TRReadingsMaster";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._dtBQCT1AS30ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1XM01ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1XM01Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1XM01ReadingsTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.dtBQCT1RS28Readings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._dtBQCT1RS28ReadingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -14492,6 +16132,16 @@ from tblBB8TRReadingsMaster";
             }
             if (((this._dtBQCT1RS28ReadingsTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._dtBQCT1RS28ReadingsTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._dtRBDS08ReadingsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._dtRBDS08ReadingsTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._dtBCLWS12ReadingsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._dtBCLWS12ReadingsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -14662,6 +16312,24 @@ from tblBB8TRReadingsMaster";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._dtBQCT1RS28ReadingsTableAdapter.Adapter);
                     }
                 }
+                if ((this._dtRBDS08ReadingsTableAdapter != null)) {
+                    revertConnections.Add(this._dtRBDS08ReadingsTableAdapter, this._dtRBDS08ReadingsTableAdapter.Connection);
+                    this._dtRBDS08ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._dtRBDS08ReadingsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._dtRBDS08ReadingsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._dtRBDS08ReadingsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._dtRBDS08ReadingsTableAdapter.Adapter);
+                    }
+                }
+                if ((this._dtBCLWS12ReadingsTableAdapter != null)) {
+                    revertConnections.Add(this._dtBCLWS12ReadingsTableAdapter, this._dtBCLWS12ReadingsTableAdapter.Connection);
+                    this._dtBCLWS12ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._dtBCLWS12ReadingsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._dtBCLWS12ReadingsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._dtBCLWS12ReadingsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._dtBCLWS12ReadingsTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -14779,6 +16447,14 @@ from tblBB8TRReadingsMaster";
                 if ((this._dtBQCT1RS28ReadingsTableAdapter != null)) {
                     this._dtBQCT1RS28ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dtBQCT1RS28ReadingsTableAdapter]));
                     this._dtBQCT1RS28ReadingsTableAdapter.Transaction = null;
+                }
+                if ((this._dtRBDS08ReadingsTableAdapter != null)) {
+                    this._dtRBDS08ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dtRBDS08ReadingsTableAdapter]));
+                    this._dtRBDS08ReadingsTableAdapter.Transaction = null;
+                }
+                if ((this._dtBCLWS12ReadingsTableAdapter != null)) {
+                    this._dtBCLWS12ReadingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dtBCLWS12ReadingsTableAdapter]));
+                    this._dtBCLWS12ReadingsTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

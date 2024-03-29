@@ -3,6 +3,8 @@ using BSIDCertificates.DS21;
 using BSIDCertificates.DS22;
 using BSIDCertificates.DS24;
 using BSIDCertificates.DS25;
+using BSIDCertificates.MC_04;
+using BSIDCertificates.MC06;
 using BSIDCertificates.PG;
 using BSIDCertificates.PH;
 using BSIDCertificates.RS;
@@ -30,7 +32,7 @@ namespace BSIDCertificates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WSForm());
+            Application.Run(new MC06Form());
         }
     }
 }

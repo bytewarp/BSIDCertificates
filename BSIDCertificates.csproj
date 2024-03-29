@@ -103,6 +103,18 @@
       <DependentUpon>DS25Form.cs</DependentUpon>
     </Compile>
     <Compile Include="LogError.cs" />
+    <Compile Include="MC04\MC04Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MC04\MC04Form.Designer.cs">
+      <DependentUpon>MC04Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MC06\MC06Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MC06\MC06Form.Designer.cs">
+      <DependentUpon>MC06Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="PG\PGForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +197,14 @@
     <EmbeddedResource Include="DS25\DS25.rdlc" />
     <EmbeddedResource Include="DS25\DS25Form.resx">
       <DependentUpon>DS25Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MC04\MC04.rdlc" />
+    <EmbeddedResource Include="MC04\MC04Form.resx">
+      <DependentUpon>MC04Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MC06\MC06.rdlc" />
+    <EmbeddedResource Include="MC06\MC06Form.resx">
+      <DependentUpon>MC06Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PG\PG.rdlc" />
     <EmbeddedResource Include="PG\PGForm.resx">
